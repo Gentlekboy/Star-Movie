@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Star Movie</string>
+    <string name="movie_star_logo">Movie star logo</string>
 </resources>
