@@ -170,7 +170,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/password"
                 style="@style/Labels"
                 android:layout_marginTop="16dp"
                 android:text="@string/password"
@@ -183,8 +183,8 @@
                 android:layout_height="wrap_content"
                 app:endIconMode="password_toggle"
                 app:layout_constraintEnd_toEndOf="@+id/birthday_text_input_layout"
-                app:layout_constraintStart_toStartOf="@+id/textView8"
-                app:layout_constraintTop_toBottomOf="@+id/textView8"
+                app:layout_constraintStart_toStartOf="@+id/password"
+                app:layout_constraintTop_toBottomOf="@+id/password"
                 app:startIconDrawable="@drawable/lock_icon"
                 app:startIconTint="@color/black">
 
@@ -195,7 +195,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/retype_password"
                 style="@style/Labels"
                 android:layout_marginTop="16dp"
                 android:text="@string/re_type_password"
@@ -208,8 +208,8 @@
                 android:layout_height="wrap_content"
                 app:endIconMode="password_toggle"
                 app:layout_constraintEnd_toEndOf="@+id/password_text_input_layout"
-                app:layout_constraintStart_toStartOf="@+id/textView9"
-                app:layout_constraintTop_toBottomOf="@+id/textView9"
+                app:layout_constraintStart_toStartOf="@+id/retype_password"
+                app:layout_constraintTop_toBottomOf="@+id/retype_password"
                 app:startIconDrawable="@drawable/lock_icon"
                 app:startIconTint="@color/black">
 
