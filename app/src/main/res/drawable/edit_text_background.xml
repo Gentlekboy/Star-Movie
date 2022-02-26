@@ -5,4 +5,5 @@
         android:width="1dp"
         android:color="@color/black" />
     <corners android:radius="4dp" />
+    <solid android:color="@color/edit_text_background"/>
 </shape>
