@@ -22,6 +22,12 @@
         <item name="android:layout_width">wrap_content</item>
     </style>
 
+<!--    All labels of edit texts should inherit this-->
+    <style name="Labels" parent="AllTextViews">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/sf_pro_text_light</item>
+    </style>
+
 <!--    All text input edit text should implement this style-->
     <style name="EditTextStyle" parent="@android:style/Widget.EditText">
         <item name="android:background">@drawable/edit_text_background</item>
