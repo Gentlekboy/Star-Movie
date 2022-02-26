@@ -7,9 +7,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#0F1B2B</color>
     <color name="white">#E5E5E5</color>
+    <color name="edit_text_background">#E5E5E5</color>
     <color name="red">#E51937</color>
     <color name="light_red">#DB5252</color>
     <color name="twitter_blue">#1AA9E1</color>
     <color name="facebook_blue">#3B5A9A</color>
     <color name="google_plus_red">#CB3E2D</color>
+    <color name="red_button_text_color">#FFFFFF</color>
 </resources>
