@@ -14,7 +14,7 @@ data class Movie(
 )
 
 //Dummy data for movies on the Home Screen
-val movieList = arrayListOf(
+val nowShowingMovieList = arrayListOf(
     Movie(
         1, 3.5F, "John Wick 3", "Crime | 2hr 10m | R", R.drawable.john_wick
     ),
@@ -26,5 +26,20 @@ val movieList = arrayListOf(
     ),
     Movie(
         4, 5.0F, "Avengers", "Action | 2hr 42m | PG-13", R.drawable.avengers
+    )
+)
+
+val comingSoonMovieList = arrayListOf(
+    Movie(
+        1, 4.5F, "Blade Runner", "Action | 2hr 25m | PG-13", R.drawable.blade_runner
+    ),
+    Movie(
+        2, 3.5F, "John Wick 3", "Crime | 2hr 10m | R", R.drawable.john_wick
+    ),
+    Movie(
+        3, 5.0F, "Avengers", "Action | 2hr 42m | PG-13", R.drawable.avengers
+    ),
+    Movie(
+        4, 2.0F, "Alita", "Adventure | 1hr 38m | 18+", R.drawable.alita
     )
 )

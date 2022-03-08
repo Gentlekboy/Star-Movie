@@ -15,4 +15,5 @@
     <color name="google_plus_red">#CB3E2D</color>
     <color name="red_button_text_color">#FFFFFF</color>
     <color name="yellow">#F8C42F</color>
+    <color name="transparent">#00000000</color>
 </resources>
