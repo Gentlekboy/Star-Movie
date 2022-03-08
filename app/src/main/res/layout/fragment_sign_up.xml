@@ -26,6 +26,7 @@
                 android:paddingHorizontal="24dp"
                 android:paddingVertical="10dp"
                 android:src="@drawable/back_arrow"
+                android:foreground="?attr/selectableItemBackground"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
