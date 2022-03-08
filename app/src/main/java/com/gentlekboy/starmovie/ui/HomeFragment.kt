@@ -9,11 +9,13 @@ import com.gentlekboy.starmovie.R
 import com.gentlekboy.starmovie.adapter.HomeScreenAdapter
 import com.gentlekboy.starmovie.data.movieList
 import com.gentlekboy.starmovie.databinding.FragmentHomeBinding
+import com.gentlekboy.starmovie.utils.HomeScreenInterface
+import com.google.android.material.snackbar.Snackbar
 
-class HomeFragment : Fragment() {
+class HomeFragment : Fragment(), HomeScreenInterface {
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
-    private val homeScreenAdapter by lazy { HomeScreenAdapter() }
+    private val homeScreenAdapter by lazy { HomeScreenAdapter(this) }
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -51,10 +53,18 @@ class HomeFragment : Fragment() {
             binding.nowShowingContainer.visibility = View.VISIBLE
             binding.nowShowingTv.setTextColor(resources.getColor(R.color.white))
         }
+
+        binding.homeSearchIcon.setOnClickListener {
+            Snackbar.make(binding.root, "Movie search is coming soon", Snackbar.LENGTH_LONG).show()
+        }
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    override fun navigateToMovieDetails(movieTitle: String) {
+        Snackbar.make(binding.root, "$movieTitle details coming soon", Snackbar.LENGTH_LONG).show()
     }
 }
