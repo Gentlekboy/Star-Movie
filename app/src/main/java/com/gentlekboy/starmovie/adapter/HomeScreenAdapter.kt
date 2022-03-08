@@ -6,12 +6,16 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.gentlekboy.starmovie.data.Movie
 import com.gentlekboy.starmovie.databinding.NowShowingViewHolderBinding
+import com.gentlekboy.starmovie.utils.HomeScreenInterface
 import com.gentlekboy.starmovie.utils.MyDiffUtil
 
 /**
  * Recycler view adapter for the Home Screen. Makes use of [MyDiffUtil] for updating data.
  */
-class HomeScreenAdapter : RecyclerView.Adapter<HomeScreenAdapter.HomeScreenViewHolder>() {
+class HomeScreenAdapter(
+    private val homeScreenInterface: HomeScreenInterface
+) : RecyclerView.Adapter<HomeScreenAdapter.HomeScreenViewHolder>() {
+
     //List holding movies currently being shown on the recycler view
     private var oldMovieList = ArrayList<Movie>()
 
@@ -35,6 +39,7 @@ class HomeScreenAdapter : RecyclerView.Adapter<HomeScreenAdapter.HomeScreenViewH
             binding.movieTitle.text = title
             binding.ratingBar.rating = rating
             binding.movieBanner.setImageResource(image)
+            itemView.setOnClickListener { homeScreenInterface.navigateToMovieDetails(title) }
         }
     }
 
