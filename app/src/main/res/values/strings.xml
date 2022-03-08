@@ -17,4 +17,12 @@
     <string name="re_type_password">RE-TYPE PASSWORD</string>
     <string name="create_account">Create Account</string>
     <string name="back_button">Back button</string>
+    <string name="star_movie">Star Movie</string>
+    <string name="play_icon">Play icon</string>
+    <string name="search_icon">Search icon</string>
+    <string name="now_showing">Now Showing</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="john_wick_banner">John Wick Banner</string>
+    <string name="john_wick_3">John Wick 3</string>
+    <string name="crime_2hr_10m_r">Crime | 2hr 10m | R</string>
 </resources>
