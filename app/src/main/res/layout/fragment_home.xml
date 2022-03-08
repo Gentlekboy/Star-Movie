@@ -82,6 +82,8 @@
         android:layout_marginTop="5dp"
         android:layout_marginEnd="5dp"
         android:layout_marginBottom="5dp"
+        android:background="@drawable/dual_selected_background"
+        android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/chooser_container"
         app:layout_constraintEnd_toEndOf="@+id/chooser_container"
         app:layout_constraintStart_toEndOf="@+id/now_showing_container"
@@ -94,12 +96,12 @@
         android:layout_marginEnd="4dp"
         android:contentDescription="@string/play_icon"
         android:src="@drawable/play_icon"
-        app:layout_constraintBottom_toBottomOf="@+id/now_playing_tv"
-        app:layout_constraintEnd_toStartOf="@+id/now_playing_tv"
-        app:layout_constraintTop_toTopOf="@+id/now_playing_tv" />
+        app:layout_constraintBottom_toBottomOf="@+id/now_showing_tv"
+        app:layout_constraintEnd_toStartOf="@+id/now_showing_tv"
+        app:layout_constraintTop_toTopOf="@+id/now_showing_tv" />
 
     <TextView
-        android:id="@+id/now_playing_tv"
+        android:id="@+id/now_showing_tv"
         style="@style/AllTextViews"
         android:text="@string/now_showing"
         android:textAlignment="center"
