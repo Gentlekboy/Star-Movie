@@ -53,6 +53,10 @@ class HomeFragment : Fragment(), HomeScreenInterface {
             binding.nowShowingContainer.visibility = View.VISIBLE
             binding.nowShowingTv.setTextColor(resources.getColor(R.color.white))
         }
+
+        binding.homeSearchIcon.setOnClickListener {
+            Snackbar.make(binding.root, "Movie search is coming soon", Snackbar.LENGTH_LONG).show()
+        }
     }
 
     override fun onDestroyView() {
