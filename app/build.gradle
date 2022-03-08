@@ -13,7 +13,7 @@ android {
         targetSdk 31
         versionCode 1
         versionName "1.0"
-
+        archivesBaseName = "$versionName"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -22,9 +22,18 @@ android {
     }
 
     buildTypes {
+        debug_wb {
+            applicationIdSuffix ".dev"
+            versionNameSuffix "-dev"
+            resValue "string", "app_name", "Star Movie"
+            debuggable true
+            signingConfig signingConfigs.debug
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            resValue "string", "app_name", "Star Movie"
+            signingConfig signingConfigs.debug
         }
     }
     compileOptions {
