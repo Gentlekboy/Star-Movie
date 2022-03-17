@@ -4,9 +4,9 @@ import androidx.recyclerview.widget.DiffUtil
 import com.gentlekboy.starmovie.data.Movie
 
 /**
- * DiffUtil class for recycler view adapters
+ * DiffUtil class for the home recycler view adapter
  */
-class MyDiffUtil(
+class HomeDiffUtil(
     private val oldList: ArrayList<Movie>,
     private val newList: ArrayList<Movie>
 ) : DiffUtil.Callback() {

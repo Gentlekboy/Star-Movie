@@ -10,10 +10,10 @@ import com.gentlekboy.starmovie.adapter.HomeScreenAdapter
 import com.gentlekboy.starmovie.data.comingSoonMovieList
 import com.gentlekboy.starmovie.data.nowShowingMovieList
 import com.gentlekboy.starmovie.databinding.FragmentHomeBinding
-import com.gentlekboy.starmovie.utils.HomeScreenInterface
+import com.gentlekboy.starmovie.utils.RecyclerviewClickInterface
 import com.google.android.material.snackbar.Snackbar
 
-class HomeFragment : Fragment(), HomeScreenInterface {
+class HomeFragment : Fragment(), RecyclerviewClickInterface {
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
     private val homeScreenAdapter by lazy { HomeScreenAdapter(this) }
@@ -69,7 +69,7 @@ class HomeFragment : Fragment(), HomeScreenInterface {
         _binding = null
     }
 
-    override fun navigateToMovieDetails(movieTitle: String) {
+    override fun navigateToItemDetails(movieTitle: String) {
         Snackbar.make(binding.root, "$movieTitle details coming soon", Snackbar.LENGTH_LONG).show()
     }
 }
