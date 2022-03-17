@@ -23,4 +23,7 @@
     <string name="john_wick_banner">John Wick Banner</string>
     <string name="john_wick_3">John Wick 3</string>
     <string name="crime_2hr_10m_r">Crime | 2hr 10m | R</string>
+    <string name="cast_amp_crew"><![CDATA[Cast & Crew]]></string>
+    <string name="bowery_king">BOWERY KING</string>
+    <string name="laurence_fishburne">Laurence Fishburne</string>
 </resources>
