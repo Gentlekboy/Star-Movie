@@ -63,4 +63,7 @@ dependencies {
 
     // Testing Navigation Component
     androidTestImplementation "androidx.navigation:navigation-testing:$nav_version"
+
+    //Circular image view
+    implementation "de.hdodenhof:circleimageview:3.1.0"
 }
