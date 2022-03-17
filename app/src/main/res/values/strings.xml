@@ -26,4 +26,6 @@
     <string name="cast_amp_crew"><![CDATA[Cast & Crew]]></string>
     <string name="bowery_king">BOWERY KING</string>
     <string name="laurence_fishburne">Laurence Fishburne</string>
+    <string name="photos">Photos</string>
+    <string name="movie_photo">Movie photo</string>
 </resources>
