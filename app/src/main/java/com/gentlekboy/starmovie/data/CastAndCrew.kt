@@ -17,27 +17,27 @@ val castAndCrewList = arrayListOf(
         1, "Keanu Reeves", "JOHN WICK", R.drawable.keanu_reeves
     ),
     CastAndCrew(
-        1, "Halle Berry", "SOFIA", R.drawable.halle_berry
+        2, "Halle Berry", "SOFIA", R.drawable.halle_berry
     ),
     CastAndCrew(
-        1, "Laurence Fishburne", "BOWERY KING", R.drawable.laurence_lishburne
+        3, "Laurence Fishburne", "BOWERY KING", R.drawable.laurence_lishburne
     ),
     CastAndCrew(
-        1, "Mark Dacascos", "ZERO", R.drawable.mark_dacascos
+        4, "Mark Dacascos", "ZERO", R.drawable.mark_dacascos
     ),
     CastAndCrew(
-        1, "Asia Kate Dillon", "ADJUDICATOR", R.drawable.asia_kate_dillon
+        5, "Asia Kate Dillon", "ADJUDICATOR", R.drawable.asia_kate_dillon
     ),
     CastAndCrew(
-        1, "Lance Reddick", "CHARON", R.drawable.lance_reddick
+        6, "Lance Reddick", "CHARON", R.drawable.lance_reddick
     ),
     CastAndCrew(
-        1, "Anjelica Huston", "DIRECTOR", R.drawable.anjelica_huston
+        7, "Anjelica Huston", "DIRECTOR", R.drawable.anjelica_huston
     ),
     CastAndCrew(
-        1, "Margaret Daly", "Operator", R.drawable.margaret_daly
+        8, "Margaret Daly", "Operator", R.drawable.margaret_daly
     ),
     CastAndCrew(
-        1, "Jerome Flynn", "Berrada", R.drawable.jerome_flynn
+        9, "Jerome Flynn", "Berrada", R.drawable.jerome_flynn
     )
 )
