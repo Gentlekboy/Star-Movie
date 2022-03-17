@@ -11,7 +11,7 @@ import com.gentlekboy.starmovie.utils.CastAndCrewDiffUtil
 /**
  * Recycler view adapter for the Cast and Crew Screen. Makes use of [CastAndCrewDiffUtil] for updating data.
  */
-class CastAndCrewAdapter() : RecyclerView.Adapter<CastAndCrewAdapter.CastAndCrewViewHolder>() {
+class CastAndCrewAdapter : RecyclerView.Adapter<CastAndCrewAdapter.CastAndCrewViewHolder>() {
 
     private var oldCastAndCrewList = ArrayList<CastAndCrew>()
 
