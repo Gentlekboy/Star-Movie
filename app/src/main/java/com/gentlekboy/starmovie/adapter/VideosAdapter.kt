@@ -38,7 +38,7 @@ class VideosAdapter : RecyclerView.Adapter<VideosAdapter.VideosViewHolder>() {
     /**
      * Adds a new list of videos to the adapter using the [DiffUtil] algorithm for optimization
      */
-    fun addCastAndCrew(newVideosList: ArrayList<Videos>) {
+    fun addVideos(newVideosList: ArrayList<Videos>) {
         val diffUtilLists = VideosDiffUtil(oldVideosList, newVideosList)
         val diffResult = DiffUtil.calculateDiff(diffUtilLists)
         oldVideosList = newVideosList

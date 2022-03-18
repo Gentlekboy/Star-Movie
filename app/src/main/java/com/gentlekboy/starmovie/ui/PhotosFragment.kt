@@ -30,7 +30,7 @@ class PhotosFragment : Fragment() {
 
     private fun setUpAdapter() {
         binding.photosRecyclerView.adapter = photosAdapter
-        photosAdapter.addCastAndCrew(photosList)
+        photosAdapter.addPhotos(photosList)
     }
 
     override fun onDestroyView() {
