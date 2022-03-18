@@ -7,6 +7,7 @@
     <color name="teal_700">#FF018786</color>
 
     <color name="black">#FFFFFF</color>
+    <color name="duration_background_colour">#0F1B2B</color>
     <color name="white">#0F1B2B</color>
     <color name="edit_text_background">#2B3543</color>
     <color name="red">#E51937</color>
@@ -15,6 +16,7 @@
     <color name="facebook_blue">#3B5A9A</color>
     <color name="google_plus_red">#CB3E2D</color>
     <color name="red_button_text_color">#FFFFFF</color>
+    <color name="duration_text_colour">#FFFFFF</color>
     <color name="yellow">#F8C42F</color>
     <color name="transparent">#00000000</color>
 </resources>
