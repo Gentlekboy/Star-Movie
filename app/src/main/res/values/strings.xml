@@ -35,4 +35,7 @@
     <string name="_3_hours_ago">3 hours ago</string>
     <string name="female_action_stars_we_can_t_wait">Female Action Stars We Can’t Wait</string>
     <string name="blog_image">Blog image</string>
+    <string name="blog_first_paragraph">John Wick is now a marked man on the run in Manhattan. He is declared excommunicado by The High Table which places a $14 million contract bounty on his head as a result of Wick\'s unauthorized killing of High Table. \n \n At first, Wick travels to the New York Public Library and retrieves two concealed items a marker (medallion) and a crucifix necklace. Wick leaves but is pursued by a gang into an antique warehouse which leads to a bloody fight between Wick and the gang involving antique weaponry.</string>
+    <string name="blog_second_paragraph">The Adjudicator contacts Winston and offers to negotiate, eventually agreeing to allow Winston to remain at The Continental, but states Wick remains a problem. Winston betrays Wick, shooting him before Wick falls from the roof of the hotel. The Adjudicator leaves The Continental but notices Wick\'s body is gone.</string>
+    <string name="forward_icon">Forward icon</string>
 </resources>

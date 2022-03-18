@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.gentlekboy.starmovie.R
 import com.gentlekboy.starmovie.adapter.BlogAdapter
 import com.gentlekboy.starmovie.data.blogList
 import com.gentlekboy.starmovie.databinding.FragmentBlogBinding
@@ -40,6 +42,6 @@ class BlogFragment : Fragment(), RecyclerviewClickInterface {
     }
 
     override fun navigateToItemDetails(movieTitle: String) {
-
+        findNavController().navigate(R.id.action_blogFragment_to_blogDetailFragment)
     }
 }

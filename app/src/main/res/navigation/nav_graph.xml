@@ -46,4 +46,22 @@
         android:name="com.gentlekboy.starmovie.ui.HomeFragment"
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/blogFragment"
+        android:name="com.gentlekboy.starmovie.ui.BlogFragment"
+        android:label="fragment_blog"
+        tools:layout="@layout/fragment_blog" >
+        <action
+            android:id="@+id/action_blogFragment_to_blogDetailFragment"
+            app:destination="@id/blogDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/blogDetailFragment"
+        android:name="com.gentlekboy.starmovie.ui.BlogDetailFragment"
+        android:label="fragment_blog_detail"
+        tools:layout="@layout/fragment_blog_detail" >
+        <action
+            android:id="@+id/action_blogDetailFragment_to_blogFragment"
+            app:destination="@id/blogFragment" />
+    </fragment>
 </navigation>
