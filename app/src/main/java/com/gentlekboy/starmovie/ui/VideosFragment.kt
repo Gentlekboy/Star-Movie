@@ -30,7 +30,7 @@ class VideosFragment : Fragment() {
 
     private fun setUpAdapter() {
         binding.videosRecyclerView.adapter = videosAdapter
-        videosAdapter.addCastAndCrew(videoList)
+        videosAdapter.addVideos(videoList)
     }
 
     override fun onDestroyView() {

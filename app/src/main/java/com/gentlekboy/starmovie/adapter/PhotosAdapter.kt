@@ -37,7 +37,7 @@ class PhotosAdapter : RecyclerView.Adapter<PhotosAdapter.PhotosViewHolder>() {
     /**
      * Adds a new list of photos to the adapter using the [DiffUtil] algorithm for optimization
      */
-    fun addCastAndCrew(newPhotosList: ArrayList<Photos>) {
+    fun addPhotos(newPhotosList: ArrayList<Photos>) {
         val diffUtilLists = PhotosDiffUtil(oldPhotosList, newPhotosList)
         val diffResult = DiffUtil.calculateDiff(diffUtilLists)
         oldPhotosList = newPhotosList
