@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.gentlekboy.starmovie.R
 import com.gentlekboy.starmovie.adapter.HomeScreenAdapter
 import com.gentlekboy.starmovie.data.comingSoonMovieList
@@ -70,6 +71,6 @@ class HomeFragment : Fragment(), RecyclerviewClickInterface {
     }
 
     override fun navigateToItemDetails(movieTitle: String) {
-        Snackbar.make(binding.root, "$movieTitle details coming soon", Snackbar.LENGTH_LONG).show()
+        findNavController().navigate(R.id.action_homeFragment_to_movieDetailFragment)
     }
 }
