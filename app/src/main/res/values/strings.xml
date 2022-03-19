@@ -42,4 +42,9 @@
     <string name="_2hr_10m_r">2hr 10m | R</string>
     <string name="_3_5_5">3.5/5</string>
     <string name="action_crime_thriller">Action, Crime, Thriller</string>
+    <string name="movie_synopsis">In this third installment of the adrenaline-fueled action franchise, super-assassin John Wick returns with a $14 million price tag on his head and an army of bounty-hunting…</string>
+    <string name="synopsis">Synopsis</string>
+    <string name="view_all">View All</string>
+    <string name="reviews">Reviews</string>
+    <string name="showtime">Showtime</string>
 </resources>
