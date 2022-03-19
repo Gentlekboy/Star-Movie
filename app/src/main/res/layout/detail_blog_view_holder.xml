@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:foreground="?attr/selectableItemBackground"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/blog_image"
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:contentDescription="@string/blog_image"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/first_blog_image" />
+
+    <TextView
+        android:id="@+id/duration_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/_3_hours_ago"
+        app:layout_constraintStart_toStartOf="@+id/blog_image"
+        app:layout_constraintTop_toBottomOf="@+id/blog_image" />
+
+    <TextView
+        android:id="@+id/blog_title_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_pro_text_semibold"
+        android:text="@string/female_action_stars_we_can_t_wait"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/blog_image"
+        app:layout_constraintStart_toStartOf="@+id/duration_tv"
+        app:layout_constraintTop_toBottomOf="@+id/duration_tv" />
+</androidx.constraintlayout.widget.ConstraintLayout>
