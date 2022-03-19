@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.DetailFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/synopsis_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/synopsis"
+            android:fontFamily="@font/sf_pro_text_bold"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <kr.co.prnd.readmore.ReadMoreTextView
+            android:id="@+id/synopsis_info_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/sf_pro_text_regular"
+            android:text="@string/movie_synopsis"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/synopsis_tv"
+            app:layout_constraintTop_toBottomOf="@+id/synopsis_tv"
+            app:readMoreColor="@color/blue"
+            app:readMoreMaxLine="3"
+            app:readMoreText="see more" />
+
+        <TextView
+            android:id="@+id/cast_and_crew_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/sf_pro_text_bold"
+            android:text="@string/cast_amp_crew"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/synopsis_info_tv"
+            app:layout_constraintTop_toBottomOf="@+id/synopsis_info_tv" />
+
+        <TextView
+            android:id="@+id/cast_and_crew_view_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/view_all"
+            android:textColor="@color/blue"
+            android:fontFamily="@font/sf_pro_text_regular"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/cast_and_crew_tv"
+            app:layout_constraintEnd_toEndOf="@+id/synopsis_info_tv"
+            app:layout_constraintTop_toTopOf="@+id/cast_and_crew_tv" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/detail_cast_and_crew_rv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="@+id/cast_and_crew_view_all"
+            app:layout_constraintStart_toStartOf="@+id/cast_and_crew_tv"
+            app:layout_constraintTop_toBottomOf="@+id/cast_and_crew_tv"
+            tools:itemCount="3"
+            tools:listitem="@layout/cast_and_crew_view_holder" />
+
+        <TextView
+            android:id="@+id/photos_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/sf_pro_text_bold"
+            android:text="@string/photos"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/detail_cast_and_crew_rv"
+            app:layout_constraintTop_toBottomOf="@+id/detail_cast_and_crew_rv" />
+
+        <TextView
+            android:id="@+id/photos_view_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_text_regular"
+            android:text="@string/view_all"
+            android:textColor="@color/blue"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/photos_tv"
+            app:layout_constraintEnd_toEndOf="@+id/detail_cast_and_crew_rv"
+            app:layout_constraintTop_toTopOf="@+id/photos_tv" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/detail_photos_rv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            tools:listitem="@layout/detail_photos_view_holder"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="@+id/photos_view_all"
+            app:layout_constraintStart_toStartOf="@+id/photos_tv"
+            app:layout_constraintTop_toBottomOf="@+id/photos_tv" />
+
+        <TextView
+            android:id="@+id/videos_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/sf_pro_text_bold"
+            android:text="@string/videos"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/detail_photos_rv"
+            app:layout_constraintTop_toBottomOf="@+id/detail_photos_rv" />
+
+        <TextView
+            android:id="@+id/videos_view_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_text_regular"
+            android:text="@string/view_all"
+            android:textColor="@color/blue"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/videos_tv"
+            app:layout_constraintEnd_toEndOf="@+id/detail_photos_rv"
+            app:layout_constraintTop_toTopOf="@+id/videos_tv" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/detail_videos_rv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            tools:listitem="@layout/detail_videos_view_holder"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="@+id/videos_view_all"
+            app:layout_constraintStart_toStartOf="@+id/videos_tv"
+            app:layout_constraintTop_toBottomOf="@+id/videos_tv" />
+
+        <TextView
+            android:id="@+id/blog_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/sf_pro_text_bold"
+            android:text="@string/blogs_about_this_film"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/detail_videos_rv"
+            app:layout_constraintTop_toBottomOf="@+id/detail_videos_rv" />
+
+        <TextView
+            android:id="@+id/blog_view_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_text_regular"
+            android:text="@string/view_all"
+            android:textColor="@color/blue"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/blog_tv"
+            app:layout_constraintEnd_toEndOf="@+id/detail_videos_rv"
+            app:layout_constraintTop_toTopOf="@+id/blog_tv" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/detail_blog_rv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            tools:listitem="@layout/detail_blog_view_holder"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintEnd_toEndOf="@+id/blog_view_all"
+            app:layout_constraintStart_toStartOf="@+id/blog_tv"
+            app:layout_constraintTop_toBottomOf="@+id/blog_tv" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>
