@@ -77,4 +77,37 @@
             android:id="@+id/action_movieDetailFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/castAndCrewFragment"
+        android:name="com.gentlekboy.starmovie.ui.CastAndCrewFragment"
+        android:label="fragment_cast_and_crew"
+        tools:layout="@layout/fragment_cast_and_crew" />
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.gentlekboy.starmovie.ui.DetailFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/action_detailFragment_to_castAndCrewFragment"
+            app:destination="@id/castAndCrewFragment" />
+        <action
+            android:id="@+id/action_detailFragment_to_photosFragment"
+            app:destination="@id/photosFragment" />
+        <action
+            android:id="@+id/action_detailFragment_to_videosFragment"
+            app:destination="@id/videosFragment" />
+        <action
+            android:id="@+id/action_detailFragment_to_blogDetailFragment"
+            app:destination="@id/blogDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/photosFragment"
+        android:name="com.gentlekboy.starmovie.ui.PhotosFragment"
+        android:label="fragment_photos"
+        tools:layout="@layout/fragment_photos" />
+    <fragment
+        android:id="@+id/videosFragment"
+        android:name="com.gentlekboy.starmovie.ui.VideosFragment"
+        android:label="fragment_videos"
+        tools:layout="@layout/fragment_videos" />
 </navigation>
