@@ -30,7 +30,7 @@
 
                 <ImageView
                     android:id="@+id/movie_banner_img"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:contentDescription="@string/movie_photo"
                     android:scaleType="centerCrop"
@@ -47,7 +47,7 @@
                     android:layout_height="40dp"
                     android:contentDescription="@string/play_icon"
                     android:src="@drawable/play_icon"
-                    app:layout_constraintBottom_toTopOf="@+id/movie_cover_img"
+                    app:layout_constraintBottom_toBottomOf="@+id/movie_banner_img"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
@@ -74,18 +74,6 @@
                     app:layout_constraintBottom_toBottomOf="@+id/back_arrow"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/back_arrow" />
-
-                <ImageView
-                    android:id="@+id/movie_cover_img"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:contentDescription="@string/movie_photo"
-                    android:src="@drawable/john_wick"
-                    app:layout_constraintBottom_toBottomOf="@+id/movie_banner_img"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.5"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/movie_banner_img" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </com.google.android.material.appbar.CollapsingToolbarLayout>
 

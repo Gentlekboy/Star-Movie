@@ -17,10 +17,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
-            android:text="@string/synopsis"
             android:fontFamily="@font/sf_pro_text_bold"
-            android:textSize="18sp"
+            android:text="@string/synopsis"
             android:textColor="@color/black"
+            android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -57,9 +57,9 @@
             android:id="@+id/cast_and_crew_view_all"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_text_regular"
             android:text="@string/view_all"
             android:textColor="@color/blue"
-            android:fontFamily="@font/sf_pro_text_regular"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="@+id/cast_and_crew_tv"
             app:layout_constraintEnd_toEndOf="@+id/synopsis_info_tv"
@@ -69,7 +69,7 @@
             android:id="@+id/detail_cast_and_crew_rv"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="4dp"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintEnd_toEndOf="@+id/cast_and_crew_view_all"
             app:layout_constraintStart_toStartOf="@+id/cast_and_crew_tv"
@@ -105,13 +105,13 @@
             android:id="@+id/detail_photos_rv"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="4dp"
             android:orientation="horizontal"
-            tools:listitem="@layout/detail_photos_view_holder"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintEnd_toEndOf="@+id/photos_view_all"
             app:layout_constraintStart_toStartOf="@+id/photos_tv"
-            app:layout_constraintTop_toBottomOf="@+id/photos_tv" />
+            app:layout_constraintTop_toBottomOf="@+id/photos_tv"
+            tools:listitem="@layout/detail_photos_view_holder" />
 
         <TextView
             android:id="@+id/videos_tv"
@@ -141,13 +141,13 @@
             android:id="@+id/detail_videos_rv"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="4dp"
             android:orientation="horizontal"
-            tools:listitem="@layout/detail_videos_view_holder"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintEnd_toEndOf="@+id/videos_view_all"
             app:layout_constraintStart_toStartOf="@+id/videos_tv"
-            app:layout_constraintTop_toBottomOf="@+id/videos_tv" />
+            app:layout_constraintTop_toBottomOf="@+id/videos_tv"
+            tools:listitem="@layout/detail_videos_view_holder" />
 
         <TextView
             android:id="@+id/blog_tv"
@@ -177,12 +177,12 @@
             android:id="@+id/detail_blog_rv"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="4dp"
             android:orientation="horizontal"
-            tools:listitem="@layout/detail_blog_view_holder"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintEnd_toEndOf="@+id/blog_view_all"
             app:layout_constraintStart_toStartOf="@+id/blog_tv"
-            app:layout_constraintTop_toBottomOf="@+id/blog_tv" />
+            app:layout_constraintTop_toBottomOf="@+id/blog_tv"
+            tools:listitem="@layout/detail_blog_view_holder" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
