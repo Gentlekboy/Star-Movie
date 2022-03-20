@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.gentlekboy.starmovie.R
 import com.gentlekboy.starmovie.adapter.CastAndCrewAdapter
 import com.gentlekboy.starmovie.adapter.DetailBlogAdapter
 import com.gentlekboy.starmovie.adapter.DetailPhotosAdapter
@@ -36,6 +38,22 @@ class DetailFragment : Fragment(), RecyclerviewClickInterface {
         setUpDetailPhotosAdapter()
         setUpDetailVideosAdapter()
         setUpDetailBlogAdapter()
+        setUpClickEvents()
+    }
+
+    private fun setUpClickEvents() {
+        binding.castAndCrewViewAll.setOnClickListener {
+            findNavController().navigate(R.id.action_detailFragment_to_castAndCrewFragment)
+        }
+        binding.photosViewAll.setOnClickListener {
+            findNavController().navigate(R.id.action_detailFragment_to_photosFragment)
+        }
+        binding.videosViewAll.setOnClickListener {
+            findNavController().navigate(R.id.action_detailFragment_to_videosFragment)
+        }
+        binding.blogViewAll.setOnClickListener {
+            findNavController().navigate(R.id.action_blogDetailFragment_to_blogFragment)
+        }
     }
 
     private fun setUpDetailBlogAdapter() {
@@ -49,6 +67,7 @@ class DetailFragment : Fragment(), RecyclerviewClickInterface {
         for (i in 0 until 4) {
             newCastAndCrewList.add(castAndCrewList[i])
         }
+
         binding.detailCastAndCrewRv.adapter = castAndCrewAdapter
         castAndCrewAdapter.addCastAndCrew(newCastAndCrewList)
     }
@@ -69,6 +88,6 @@ class DetailFragment : Fragment(), RecyclerviewClickInterface {
     }
 
     override fun navigateToItemDetails(movieTitle: String) {
-
+        findNavController().navigate(R.id.action_detailFragment_to_blogDetailFragment)
     }
 }
