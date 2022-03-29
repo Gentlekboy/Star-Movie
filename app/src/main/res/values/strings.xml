@@ -47,4 +47,8 @@
     <string name="view_all">View All</string>
     <string name="reviews">Reviews</string>
     <string name="showtime">Showtime</string>
+    <string name="_38_reviews">38 Reviews</string>
+    <string name="may_20_2019">May 20, 2019</string>
+    <string name="review_text">John Wick Chapter 3 offers great action and a more in-depth at his World in comparison to the first two entries.</string>
+    <string name="profile_image">Profile image</string>
 </resources>
