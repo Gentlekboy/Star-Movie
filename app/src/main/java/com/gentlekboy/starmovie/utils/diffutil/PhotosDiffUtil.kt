@@ -1,14 +1,14 @@
-package com.gentlekboy.starmovie.utils
+package com.gentlekboy.starmovie.utils.diffutil
 
 import androidx.recyclerview.widget.DiffUtil
-import com.gentlekboy.starmovie.data.Movie
+import com.gentlekboy.starmovie.data.model.PhotosModel
 
 /**
- * DiffUtil class for the home recycler view adapter
+ * DiffUtil class for the photos recycler view adapter
  */
-class HomeDiffUtil(
-    private val oldList: ArrayList<Movie>,
-    private val newList: ArrayList<Movie>
+class PhotosDiffUtil(
+    private val oldList: ArrayList<PhotosModel>,
+    private val newList: ArrayList<PhotosModel>
 ) : DiffUtil.Callback() {
 
     override fun getOldListSize() = oldList.size
@@ -20,9 +20,6 @@ class HomeDiffUtil(
 
     override fun areContentsTheSame(oldItemPosition: Int, newItemPosition: Int) = when {
         oldList[oldItemPosition].id != newList[newItemPosition].id -> false
-        oldList[oldItemPosition].rating != newList[newItemPosition].rating -> false
-        oldList[oldItemPosition].title != newList[newItemPosition].title -> false
-        oldList[oldItemPosition].genre != newList[newItemPosition].genre -> false
         oldList[oldItemPosition].image != newList[newItemPosition].image -> false
         else -> true
     }

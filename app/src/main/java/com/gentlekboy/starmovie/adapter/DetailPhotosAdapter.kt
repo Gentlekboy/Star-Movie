@@ -4,16 +4,16 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.gentlekboy.starmovie.data.Photos
+import com.gentlekboy.starmovie.data.model.PhotosModel
 import com.gentlekboy.starmovie.databinding.DetailPhotosViewHolderBinding
-import com.gentlekboy.starmovie.utils.PhotosDiffUtil
+import com.gentlekboy.starmovie.utils.diffutil.PhotosDiffUtil
 
 /**
  * Recycler view adapter for photos on the details screen. Makes use of [PhotosDiffUtil] for updating data.
  */
 class DetailPhotosAdapter : RecyclerView.Adapter<DetailPhotosAdapter.DetailPhotosViewHolder>() {
 
-    private var oldPhotosList = ArrayList<Photos>()
+    private var oldPhotosList = ArrayList<PhotosModel>()
 
     inner class DetailPhotosViewHolder(val binding: DetailPhotosViewHolderBinding) :
         RecyclerView.ViewHolder(binding.root)
@@ -37,7 +37,7 @@ class DetailPhotosAdapter : RecyclerView.Adapter<DetailPhotosAdapter.DetailPhoto
     /**
      * Adds a new list of photos to the adapter using the [DiffUtil] algorithm for optimization
      */
-    fun addPhotos(newPhotosList: ArrayList<Photos>) {
+    fun addPhotos(newPhotosList: ArrayList<PhotosModel>) {
         val diffUtilLists = PhotosDiffUtil(oldPhotosList, newPhotosList)
         val diffResult = DiffUtil.calculateDiff(diffUtilLists)
         oldPhotosList = newPhotosList

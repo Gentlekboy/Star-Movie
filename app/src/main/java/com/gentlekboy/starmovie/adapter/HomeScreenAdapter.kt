@@ -4,10 +4,10 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.gentlekboy.starmovie.data.Movie
+import com.gentlekboy.starmovie.data.model.MovieModel
 import com.gentlekboy.starmovie.databinding.NowShowingViewHolderBinding
-import com.gentlekboy.starmovie.utils.RecyclerviewClickInterface
-import com.gentlekboy.starmovie.utils.HomeDiffUtil
+import com.gentlekboy.starmovie.utils.clickinterface.RecyclerviewClickInterface
+import com.gentlekboy.starmovie.utils.diffutil.HomeDiffUtil
 
 /**
  * Recycler view adapter for the Home Screen. Makes use of [HomeDiffUtil] for updating data.
@@ -17,7 +17,7 @@ class HomeScreenAdapter(
 ) : RecyclerView.Adapter<HomeScreenAdapter.HomeScreenViewHolder>() {
 
     //List holding movies currently being shown on the recycler view
-    private var oldMovieList = ArrayList<Movie>()
+    private var oldMovieList = ArrayList<MovieModel>()
 
     //Create view holder class using view binding
     inner class HomeScreenViewHolder(val binding: NowShowingViewHolderBinding) :
@@ -49,7 +49,7 @@ class HomeScreenAdapter(
     /**
      * Adds a new list of movies to the adapter using the [DiffUtil] algorithm for optimization
      */
-    fun addMovies(newMovieList: ArrayList<Movie>) {
+    fun addMovies(newMovieList: ArrayList<MovieModel>) {
         val diffUtilLists = HomeDiffUtil(oldMovieList, newMovieList)
         val diffResult = DiffUtil.calculateDiff(diffUtilLists)
         oldMovieList = newMovieList

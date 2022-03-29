@@ -1,11 +1,11 @@
-package com.gentlekboy.starmovie.data
+package com.gentlekboy.starmovie.data.model
 
 import com.gentlekboy.starmovie.R
 
 /**
  * Data class for Casts and crews shown on the Casts and crew Screen
  */
-data class CastAndCrew(
+data class CastAndCrewModel(
     val id: Int,
     val realName: String,
     val movieName: String,
@@ -13,31 +13,31 @@ data class CastAndCrew(
 )
 
 val castAndCrewList = arrayListOf(
-    CastAndCrew(
+    CastAndCrewModel(
         1, "Keanu Reeves", "JOHN WICK", R.drawable.keanu_reeves
     ),
-    CastAndCrew(
+    CastAndCrewModel(
         2, "Halle Berry", "SOFIA", R.drawable.halle_berry
     ),
-    CastAndCrew(
+    CastAndCrewModel(
         3, "Laurence Fishburne", "BOWERY KING", R.drawable.laurence_lishburne
     ),
-    CastAndCrew(
+    CastAndCrewModel(
         4, "Mark Dacascos", "ZERO", R.drawable.mark_dacascos
     ),
-    CastAndCrew(
+    CastAndCrewModel(
         5, "Asia Kate Dillon", "ADJUDICATOR", R.drawable.asia_kate_dillon
     ),
-    CastAndCrew(
+    CastAndCrewModel(
         6, "Lance Reddick", "CHARON", R.drawable.lance_reddick
     ),
-    CastAndCrew(
+    CastAndCrewModel(
         7, "Anjelica Huston", "DIRECTOR", R.drawable.anjelica_huston
     ),
-    CastAndCrew(
+    CastAndCrewModel(
         8, "Margaret Daly", "Operator", R.drawable.margaret_daly
     ),
-    CastAndCrew(
+    CastAndCrewModel(
         9, "Jerome Flynn", "Berrada", R.drawable.jerome_flynn
     )
 )

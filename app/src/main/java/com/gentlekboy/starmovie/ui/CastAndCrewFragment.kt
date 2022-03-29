@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.gentlekboy.starmovie.adapter.CastAndCrewAdapter
-import com.gentlekboy.starmovie.data.castAndCrewList
+import com.gentlekboy.starmovie.data.model.castAndCrewList
 import com.gentlekboy.starmovie.databinding.FragmentCastAndCrewBinding
 
 class CastAndCrewFragment : Fragment() {
