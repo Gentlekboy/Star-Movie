@@ -4,16 +4,16 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.gentlekboy.starmovie.data.CastAndCrew
+import com.gentlekboy.starmovie.data.model.CastAndCrewModel
 import com.gentlekboy.starmovie.databinding.CastAndCrewViewHolderBinding
-import com.gentlekboy.starmovie.utils.CastAndCrewDiffUtil
+import com.gentlekboy.starmovie.utils.diffutil.CastAndCrewDiffUtil
 
 /**
  * Recycler view adapter for the Cast and Crew Screen. Makes use of [CastAndCrewDiffUtil] for updating data.
  */
 class CastAndCrewAdapter : RecyclerView.Adapter<CastAndCrewAdapter.CastAndCrewViewHolder>() {
 
-    private var oldCastAndCrewList = ArrayList<CastAndCrew>()
+    private var oldCastAndCrewList = ArrayList<CastAndCrewModel>()
 
     inner class CastAndCrewViewHolder(val binding: CastAndCrewViewHolderBinding) :
         RecyclerView.ViewHolder(binding.root)
@@ -39,7 +39,7 @@ class CastAndCrewAdapter : RecyclerView.Adapter<CastAndCrewAdapter.CastAndCrewVi
     /**
      * Adds a new list of cast and crew to the adapter using the [DiffUtil] algorithm for optimization
      */
-    fun addCastAndCrew(newCastAndCrewList: ArrayList<CastAndCrew>) {
+    fun addCastAndCrew(newCastAndCrewList: ArrayList<CastAndCrewModel>) {
         val diffUtilLists = CastAndCrewDiffUtil(oldCastAndCrewList, newCastAndCrewList)
         val diffResult = DiffUtil.calculateDiff(diffUtilLists)
         oldCastAndCrewList = newCastAndCrewList

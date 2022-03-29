@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.gentlekboy.starmovie.adapter.PhotosAdapter
-import com.gentlekboy.starmovie.data.photosList
+import com.gentlekboy.starmovie.data.model.photosList
 import com.gentlekboy.starmovie.databinding.FragmentPhotosBinding
 
 class PhotosFragment : Fragment() {

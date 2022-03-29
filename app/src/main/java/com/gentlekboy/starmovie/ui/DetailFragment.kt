@@ -11,9 +11,9 @@ import com.gentlekboy.starmovie.adapter.CastAndCrewAdapter
 import com.gentlekboy.starmovie.adapter.DetailBlogAdapter
 import com.gentlekboy.starmovie.adapter.DetailPhotosAdapter
 import com.gentlekboy.starmovie.adapter.DetailVideosAdapter
-import com.gentlekboy.starmovie.data.*
+import com.gentlekboy.starmovie.data.model.*
 import com.gentlekboy.starmovie.databinding.FragmentDetailBinding
-import com.gentlekboy.starmovie.utils.RecyclerviewClickInterface
+import com.gentlekboy.starmovie.utils.clickinterface.RecyclerviewClickInterface
 
 class DetailFragment : Fragment(), RecyclerviewClickInterface {
     private var _binding: FragmentDetailBinding? = null
@@ -62,7 +62,7 @@ class DetailFragment : Fragment(), RecyclerviewClickInterface {
     }
 
     private fun setUpCastAndCrewAdapter() {
-        val newCastAndCrewList = arrayListOf<CastAndCrew>()
+        val newCastAndCrewList = arrayListOf<CastAndCrewModel>()
 
         for (i in 0 until 4) {
             newCastAndCrewList.add(castAndCrewList[i])

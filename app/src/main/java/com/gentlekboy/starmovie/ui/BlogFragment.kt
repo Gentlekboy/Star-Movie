@@ -8,9 +8,9 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.gentlekboy.starmovie.R
 import com.gentlekboy.starmovie.adapter.BlogAdapter
-import com.gentlekboy.starmovie.data.blogList
+import com.gentlekboy.starmovie.data.model.blogList
 import com.gentlekboy.starmovie.databinding.FragmentBlogBinding
-import com.gentlekboy.starmovie.utils.RecyclerviewClickInterface
+import com.gentlekboy.starmovie.utils.clickinterface.RecyclerviewClickInterface
 
 class BlogFragment : Fragment(), RecyclerviewClickInterface {
     private var _binding: FragmentBlogBinding? = null

@@ -4,16 +4,16 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
-import com.gentlekboy.starmovie.data.Videos
+import com.gentlekboy.starmovie.data.model.VideosModel
 import com.gentlekboy.starmovie.databinding.DetailVideosViewHolderBinding
-import com.gentlekboy.starmovie.utils.VideosDiffUtil
+import com.gentlekboy.starmovie.utils.diffutil.VideosDiffUtil
 
 /**
  * Recycler view adapter for videos on the detail screen. Makes use of [VideosDiffUtil] for updating data.
  */
 class DetailVideosAdapter : RecyclerView.Adapter<DetailVideosAdapter.DetailVideosViewHolder>() {
 
-    private var oldVideosList = ArrayList<Videos>()
+    private var oldVideosList = ArrayList<VideosModel>()
 
     inner class DetailVideosViewHolder(val binding: DetailVideosViewHolderBinding) :
         RecyclerView.ViewHolder(binding.root)
@@ -38,7 +38,7 @@ class DetailVideosAdapter : RecyclerView.Adapter<DetailVideosAdapter.DetailVideo
     /**
      * Adds a new list of videos to the adapter using the [DiffUtil] algorithm for optimization
      */
-    fun addVideos(newVideosList: ArrayList<Videos>) {
+    fun addVideos(newVideosList: ArrayList<VideosModel>) {
         val diffUtilLists = VideosDiffUtil(oldVideosList, newVideosList)
         val diffResult = DiffUtil.calculateDiff(diffUtilLists)
         oldVideosList = newVideosList

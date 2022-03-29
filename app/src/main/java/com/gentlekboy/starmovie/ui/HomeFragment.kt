@@ -8,10 +8,10 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.gentlekboy.starmovie.R
 import com.gentlekboy.starmovie.adapter.HomeScreenAdapter
-import com.gentlekboy.starmovie.data.comingSoonMovieList
-import com.gentlekboy.starmovie.data.nowShowingMovieList
+import com.gentlekboy.starmovie.data.model.comingSoonMovieList
+import com.gentlekboy.starmovie.data.model.nowShowingMovieList
 import com.gentlekboy.starmovie.databinding.FragmentHomeBinding
-import com.gentlekboy.starmovie.utils.RecyclerviewClickInterface
+import com.gentlekboy.starmovie.utils.clickinterface.RecyclerviewClickInterface
 import com.google.android.material.snackbar.Snackbar
 
 class HomeFragment : Fragment(), RecyclerviewClickInterface {

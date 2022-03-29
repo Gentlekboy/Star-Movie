@@ -1,11 +1,11 @@
-package com.gentlekboy.starmovie.data
+package com.gentlekboy.starmovie.data.model
 
 import com.gentlekboy.starmovie.R
 
 /**
  * Data class for Movies shown on the Home Screen
  */
-data class Movie(
+data class MovieModel(
     val id: Int,
     val rating: Float,
     val title: String,
@@ -15,31 +15,31 @@ data class Movie(
 
 //Dummy data for movies on the Home Screen
 val nowShowingMovieList = arrayListOf(
-    Movie(
+    MovieModel(
         1, 3.5F, "John Wick 3", "Crime | 2hr 10m | R", R.drawable.john_wick
     ),
-    Movie(
+    MovieModel(
         2, 4.5F, "Blade Runner", "Action | 2hr 25m | PG-13", R.drawable.blade_runner
     ),
-    Movie(
+    MovieModel(
         3, 2.0F, "Alita", "Adventure | 1hr 38m | 18+", R.drawable.alita
     ),
-    Movie(
+    MovieModel(
         4, 5.0F, "Avengers", "Action | 2hr 42m | PG-13", R.drawable.avengers
     )
 )
 
 val comingSoonMovieList = arrayListOf(
-    Movie(
+    MovieModel(
         1, 4.5F, "Blade Runner", "Action | 2hr 25m | PG-13", R.drawable.blade_runner
     ),
-    Movie(
+    MovieModel(
         2, 3.5F, "John Wick 3", "Crime | 2hr 10m | R", R.drawable.john_wick
     ),
-    Movie(
+    MovieModel(
         3, 5.0F, "Avengers", "Action | 2hr 42m | PG-13", R.drawable.avengers
     ),
-    Movie(
+    MovieModel(
         4, 2.0F, "Alita", "Adventure | 1hr 38m | 18+", R.drawable.alita
     )
 )
