@@ -43,16 +43,16 @@ class DetailFragment : Fragment(), RecyclerviewClickInterface {
 
     private fun setUpClickEvents() {
         binding.castAndCrewViewAll.setOnClickListener {
-            findNavController().navigate(R.id.action_detailFragment_to_castAndCrewFragment)
+            findNavController().navigate(R.id.action_movieDetailFragment_to_castAndCrewFragment)
         }
         binding.photosViewAll.setOnClickListener {
-            findNavController().navigate(R.id.action_detailFragment_to_photosFragment)
+            findNavController().navigate(R.id.action_movieDetailFragment_to_photosFragment)
         }
         binding.videosViewAll.setOnClickListener {
-            findNavController().navigate(R.id.action_detailFragment_to_videosFragment)
+            findNavController().navigate(R.id.action_movieDetailFragment_to_videosFragment)
         }
         binding.blogViewAll.setOnClickListener {
-            findNavController().navigate(R.id.action_blogDetailFragment_to_blogFragment)
+            findNavController().navigate(R.id.action_movieDetailFragment_to_blogFragment)
         }
     }
 
@@ -88,6 +88,6 @@ class DetailFragment : Fragment(), RecyclerviewClickInterface {
     }
 
     override fun navigateToItemDetails(movieTitle: String) {
-        findNavController().navigate(R.id.action_detailFragment_to_blogDetailFragment)
+        findNavController().navigate(R.id.action_movieDetailFragment_to_blogDetailFragment)
     }
 }
