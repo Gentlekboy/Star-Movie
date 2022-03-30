@@ -168,33 +168,125 @@
                 app:layout_constraintStart_toEndOf="@+id/movie_rating"
                 app:layout_constraintTop_toTopOf="@+id/movie_rating" />
 
-            <com.google.android.material.tabs.TabLayout
-                android:id="@+id/tab_layout"
+            <!--            <com.google.android.material.tabs.TabLayout-->
+            <!--                android:id="@+id/tab_layout"-->
+            <!--                android:layout_width="0dp"-->
+            <!--                android:layout_height="40dp"-->
+            <!--                android:layout_marginStart="16dp"-->
+            <!--                android:layout_marginTop="24dp"-->
+            <!--                android:layout_marginEnd="16dp"-->
+            <!--                android:background="@color/white"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintHorizontal_bias="0.5"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/movie_rating"-->
+            <!--                app:tabIndicatorColor="@color/red"-->
+            <!--                app:tabIndicatorFullWidth="false"-->
+            <!--                app:tabSelectedTextColor="@color/red"-->
+            <!--                app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"-->
+            <!--                app:tabTextColor="@color/black" />-->
+
+            <!--            <androidx.viewpager.widget.ViewPager-->
+            <!--                android:id="@+id/view_pager"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="1200dp"-->
+            <!--                android:layout_marginTop="16dp"-->
+            <!--                app:layout_constraintEnd_toEndOf="@+id/tab_layout"-->
+            <!--                app:layout_constraintHorizontal_bias="0.5"-->
+            <!--                app:layout_constraintStart_toStartOf="@+id/tab_layout"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/tab_layout" />-->
+
+            <View
+                android:id="@+id/chooser_container"
                 android:layout_width="0dp"
-                android:layout_height="40dp"
+                android:layout_height="44dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="32dp"
                 android:layout_marginEnd="16dp"
-                android:background="@color/white"
+                android:background="@drawable/dual_selector_background"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/movie_rating"
-                app:tabIndicatorColor="@color/red"
-                app:tabIndicatorFullWidth="false"
-                app:tabSelectedTextColor="@color/red"
-                app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
-                app:tabTextColor="@color/black" />
+                app:layout_constraintTop_toBottomOf="@+id/movie_rating" />
 
-            <androidx.viewpager.widget.ViewPager
-                android:id="@+id/view_pager"
-                android:layout_width="wrap_content"
-                android:layout_height="1200dp"
-                android:layout_marginTop="16dp"
-                app:layout_constraintEnd_toEndOf="@+id/tab_layout"
-                app:layout_constraintHorizontal_bias="0.5"
-                app:layout_constraintStart_toStartOf="@+id/tab_layout"
-                app:layout_constraintTop_toBottomOf="@+id/tab_layout" />
+            <View
+                android:id="@+id/details_container"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/dual_selected_background"
+                app:layout_constraintBottom_toBottomOf="@+id/chooser_container"
+                app:layout_constraintEnd_toStartOf="@+id/reviews_container"
+                app:layout_constraintStart_toStartOf="@+id/chooser_container"
+                app:layout_constraintTop_toTopOf="@+id/chooser_container" />
+
+            <View
+                android:id="@+id/reviews_container"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/chooser_container"
+                app:layout_constraintEnd_toStartOf="@+id/showtime_container"
+                app:layout_constraintStart_toEndOf="@+id/details_container"
+                app:layout_constraintTop_toTopOf="@+id/chooser_container" />
+
+            <View
+                android:id="@+id/showtime_container"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintBottom_toBottomOf="@+id/chooser_container"
+                app:layout_constraintEnd_toEndOf="@+id/chooser_container"
+                app:layout_constraintStart_toEndOf="@id/reviews_container"
+                app:layout_constraintTop_toTopOf="@+id/chooser_container" />
+
+            <TextView
+                android:id="@+id/detail_tv"
+                style="@style/AllTextViews"
+                android:text="Detail"
+                android:textAlignment="center"
+                android:textColor="@color/red_button_text_color"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/details_container"
+                app:layout_constraintEnd_toEndOf="@+id/details_container"
+                app:layout_constraintStart_toStartOf="@+id/details_container"
+                app:layout_constraintTop_toTopOf="@+id/details_container" />
+
+            <TextView
+                android:id="@+id/reviews_tv"
+                style="@style/AllTextViews"
+                android:text="@string/reviews"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/reviews_container"
+                app:layout_constraintEnd_toEndOf="@+id/reviews_container"
+                app:layout_constraintStart_toStartOf="@+id/reviews_container"
+                app:layout_constraintTop_toTopOf="@+id/reviews_container" />
+
+            <TextView
+                android:id="@+id/showtime_tv"
+                style="@style/AllTextViews"
+                android:text="@string/showtime"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="@+id/showtime_container"
+                app:layout_constraintEnd_toEndOf="@+id/showtime_container"
+                app:layout_constraintStart_toStartOf="@+id/showtime_container"
+                app:layout_constraintTop_toTopOf="@+id/showtime_container" />
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/movie_detail_host"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/chooser_container" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.core.widget.NestedScrollView>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -45,7 +45,7 @@ class HomeFragment : Fragment(), RecyclerviewClickInterface {
 
             binding.playIcon.visibility = View.INVISIBLE
             binding.comingSoonContainer.setBackgroundResource(R.drawable.dual_selected_background)
-            binding.comingSoonTv.setTextColor(resources.getColor(R.color.white))
+            binding.comingSoonTv.setTextColor(resources.getColor(R.color.red_button_text_color))
             binding.nowShowingContainer.setBackgroundResource(R.color.transparent)
             binding.nowShowingTv.setTextColor(resources.getColor(R.color.black))
         }
@@ -57,7 +57,7 @@ class HomeFragment : Fragment(), RecyclerviewClickInterface {
             binding.comingSoonContainer.setBackgroundResource(R.color.transparent)
             binding.comingSoonTv.setTextColor(resources.getColor(R.color.black))
             binding.nowShowingContainer.setBackgroundResource(R.drawable.dual_selected_background)
-            binding.nowShowingTv.setTextColor(resources.getColor(R.color.white))
+            binding.nowShowingTv.setTextColor(resources.getColor(R.color.red_button_text_color))
         }
 
         binding.homeSearchIcon.setOnClickListener {

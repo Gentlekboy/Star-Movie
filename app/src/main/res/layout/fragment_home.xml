@@ -103,7 +103,7 @@
         style="@style/AllTextViews"
         android:text="@string/now_showing"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/red_button_text_color"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/now_showing_container"
         app:layout_constraintEnd_toEndOf="@+id/now_showing_container"
