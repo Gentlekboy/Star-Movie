@@ -51,4 +51,12 @@
     <string name="may_20_2019">May 20, 2019</string>
     <string name="review_text">John Wick Chapter 3 offers great action and a more in-depth at his World in comparison to the first two entries.</string>
     <string name="profile_image">Profile image</string>
+    <string name="today">Today</string>
+    <string name="wed">WED</string>
+    <string name="choose_date">Choose Date</string>
+    <string name="choose_cinema">Choose Cinema</string>
+    <string name="_2d">2D</string>
+    <string name="_8_30_am">8:30 AM</string>
+    <string name="choose_a_seat">Choose A Seat</string>
+    <string name="imax">Imax</string>
 </resources>
