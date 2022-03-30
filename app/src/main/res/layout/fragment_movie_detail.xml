@@ -250,7 +250,7 @@
                 style="@style/AllTextViews"
                 android:text="Detail"
                 android:textAlignment="center"
-                android:textColor="@color/white"
+                android:textColor="@color/red_button_text_color"
                 android:textSize="14sp"
                 app:layout_constraintBottom_toBottomOf="@+id/details_container"
                 app:layout_constraintEnd_toEndOf="@+id/details_container"
