@@ -59,4 +59,16 @@
     <string name="_8_30_am">8:30 AM</string>
     <string name="choose_a_seat">Choose A Seat</string>
     <string name="imax">Imax</string>
+    <string name="extra_items">Extra Items</string>
+    <string name="extra_item_image">Extra item image</string>
+    <string name="coca_cola">Coca Cola</string>
+    <string name="_4_00">$4.00</string>
+    <string name="add_an_item_icon">Add an item icon</string>
+    <string name="remove_an_item_icon">Remove an item icon</string>
+    <string name="_1">1</string>
+    <string name="_4_items_selected">4 ITEMS SELECTED</string>
+    <string name="_18_00">$18.00</string>
+    <string name="total_cost">TOTAL COST</string>
+    <string name="_54_00">$54.00</string>
+    <string name="_continue">Continue</string>
 </resources>
