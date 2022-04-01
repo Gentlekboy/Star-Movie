@@ -43,7 +43,7 @@
                 android:id="@+id/textView3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="8dp"
                 android:fontFamily="@font/sf_pro_text_semibold"
                 android:text="@string/congratulations"
                 android:textColor="@color/black"
@@ -69,7 +69,7 @@
                 android:id="@+id/divider2"
                 android:layout_width="0dp"
                 android:layout_height="1dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="24dp"
                 android:background="?android:attr/listDivider"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
@@ -80,9 +80,10 @@
                 android:id="@+id/textView9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="24dp"
                 android:fontFamily="@font/sf_pro_text_regular"
                 android:text="@string/theatre"
+                android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/divider2" />
 
@@ -94,7 +95,6 @@
                 android:fontFamily="@font/sf_pro_text_semibold"
                 android:text="@string/paragon_cinema"
                 android:textColor="@color/black"
-                android:textSize="16sp"
                 app:layout_constraintEnd_toStartOf="@+id/guideline3"
                 app:layout_constraintStart_toStartOf="@+id/textView9"
                 app:layout_constraintTop_toBottomOf="@+id/textView9" />
@@ -106,6 +106,7 @@
                 android:layout_marginStart="8dp"
                 android:fontFamily="@font/sf_pro_text_regular"
                 android:text="@string/seat"
+                android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="@+id/guideline3"
                 app:layout_constraintTop_toTopOf="@+id/textView9" />
 
@@ -116,7 +117,6 @@
                 android:fontFamily="@font/sf_pro_text_semibold"
                 android:text="@string/e4_e5"
                 android:textColor="@color/black"
-                android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="@+id/textView13"
                 app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
@@ -124,9 +124,10 @@
                 android:id="@+id/textView15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="16dp"
                 android:fontFamily="@font/sf_pro_text_regular"
                 android:text="@string/date"
+                android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="@+id/textView12"
                 app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
@@ -137,7 +138,6 @@
                 android:fontFamily="@font/sf_pro_text_semibold"
                 android:text="@string/friday_24_may_2019"
                 android:textColor="@color/black"
-                android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="@+id/textView12"
                 app:layout_constraintStart_toStartOf="@+id/textView15"
                 app:layout_constraintTop_toBottomOf="@+id/textView15" />
@@ -148,6 +148,7 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sf_pro_text_regular"
                 android:text="@string/time"
+                android:textSize="12sp"
                 app:layout_constraintStart_toStartOf="@+id/textView14"
                 app:layout_constraintTop_toTopOf="@+id/textView15" />
 
@@ -158,7 +159,6 @@
                 android:fontFamily="@font/sf_pro_text_semibold"
                 android:text="@string/_8_30_am_10_00_am"
                 android:textColor="@color/black"
-                android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="@+id/textView17"
                 app:layout_constraintTop_toBottomOf="@+id/textView17" />
 
