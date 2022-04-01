@@ -112,4 +112,61 @@
         android:name="com.gentlekboy.starmovie.ui.VideosFragment"
         android:label="fragment_videos"
         tools:layout="@layout/fragment_videos" />
+    <fragment
+        android:id="@+id/ticketFragment"
+        android:name="com.gentlekboy.starmovie.ui.TicketFragment"
+        android:label="fragment_ticket"
+        tools:layout="@layout/fragment_ticket" />
+    <fragment
+        android:id="@+id/extraItemsFragment"
+        android:name="com.gentlekboy.starmovie.ui.ExtraItemsFragment"
+        android:label="fragment_extra_items"
+        tools:layout="@layout/fragment_extra_items" >
+        <action
+            android:id="@+id/action_extraItemsFragment_to_showTimeFragment"
+            app:destination="@id/showTimeFragment" />
+        <action
+            android:id="@+id/action_extraItemsFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationFragment"
+        android:name="com.gentlekboy.starmovie.ui.NotificationFragment"
+        android:label="fragment_notification"
+        tools:layout="@layout/fragment_notification" />
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.gentlekboy.starmovie.ui.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment" >
+        <action
+            android:id="@+id/action_paymentFragment_to_extraItemsFragment"
+            app:destination="@id/extraItemsFragment" />
+        <action
+            android:id="@+id/action_paymentFragment_to_paymentConfirmationFragment"
+            app:destination="@id/paymentConfirmationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentConfirmationFragment"
+        android:name="com.gentlekboy.starmovie.ui.PaymentConfirmationFragment"
+        android:label="fragment_payment_confirmation"
+        tools:layout="@layout/fragment_payment_confirmation" >
+        <action
+            android:id="@+id/action_paymentConfirmationFragment_to_ticketFragment"
+            app:destination="@id/ticketFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reviewsFragment"
+        android:name="com.gentlekboy.starmovie.ui.ReviewsFragment"
+        android:label="fragment_reviews"
+        tools:layout="@layout/fragment_reviews" />
+    <fragment
+        android:id="@+id/showTimeFragment"
+        android:name="com.gentlekboy.starmovie.ui.ShowTimeFragment"
+        android:label="fragment_show_time"
+        tools:layout="@layout/fragment_show_time" >
+        <action
+            android:id="@+id/action_showTimeFragment_to_extraItemsFragment"
+            app:destination="@id/extraItemsFragment" />
+    </fragment>
 </navigation>
