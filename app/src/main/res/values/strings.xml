@@ -80,4 +80,13 @@
     <string name="card_expiry_date">Card Expiry Date</string>
     <string name="cvv">CVV</string>
     <string name="place_order">Place order</string>
+    <string name="congratulations">Congratulations</string>
+    <string name="you_booked_the_movie_successful">You booked the movie successful.</string>
+    <string name="theatre">THEATRE</string>
+    <string name="paragon_cinema">Paragon Cinema</string>
+    <string name="seat">SEAT</string>
+    <string name="e4_e5">E4, E5</string>
+    <string name="date">DATE</string>
+    <string name="time">TIME</string>
+    <string name="view_ticket">View Ticket</string>
 </resources>
