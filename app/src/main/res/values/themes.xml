@@ -30,7 +30,7 @@
 
 <!--    All text input edit text should implement this style-->
     <style name="EditTextStyle" parent="@android:style/Widget.EditText">
-        <item name="android:background">@drawable/edit_text_background</item>
+        <item name="android:background">@drawable/dark_grey_curved_stroke_background</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:textSize">18sp</item>

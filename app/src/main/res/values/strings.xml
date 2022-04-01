@@ -71,4 +71,13 @@
     <string name="total_cost">TOTAL COST</string>
     <string name="_54_00">$54.00</string>
     <string name="_continue">Continue</string>
+    <string name="payment">Payment</string>
+    <string name="_8_30_am_10_00_am">8:30 AM - 10:00 AM</string>
+    <string name="friday_24_may_2019">Friday 24 May, 2019</string>
+    <string name="seat_e4_e5">Seat: E4,E5</string>
+    <string name="card_name">Card Name</string>
+    <string name="card_number">Card Number</string>
+    <string name="card_expiry_date">Card Expiry Date</string>
+    <string name="cvv">CVV</string>
+    <string name="place_order">Place order</string>
 </resources>
