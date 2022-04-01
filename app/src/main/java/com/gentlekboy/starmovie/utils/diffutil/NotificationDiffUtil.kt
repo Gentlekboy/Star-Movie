@@ -21,6 +21,7 @@ class NotificationDiffUtil(
     override fun areContentsTheSame(oldItemPosition: Int, newItemPosition: Int) = when {
         oldList[oldItemPosition].id != newList[newItemPosition].id -> false
         oldList[oldItemPosition].image != newList[newItemPosition].image -> false
+        oldList[oldItemPosition].imageBackground != newList[newItemPosition].imageBackground -> false
         oldList[oldItemPosition].notification != newList[newItemPosition].notification -> false
         oldList[oldItemPosition].time != newList[newItemPosition].time -> false
         else -> true

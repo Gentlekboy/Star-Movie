@@ -29,6 +29,7 @@ class NotificationAdapter : RecyclerView.Adapter<NotificationAdapter.Notificatio
     override fun onBindViewHolder(holder: NotificationViewHolder, position: Int) = with(holder) {
         with(oldNotificationsList[position]) {
             binding.notificationTypeIcon.setImageResource(image)
+            binding.notificationTypeIcon.setBackgroundResource(imageBackground)
             binding.notificationText.text = notification
             binding.notificationTime.text = time
         }
