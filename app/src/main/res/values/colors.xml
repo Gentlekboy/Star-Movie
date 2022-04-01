@@ -17,4 +17,5 @@
     <color name="normal_white">#FFFFFF</color>
     <color name="indigo">#47CFFF</color>
     <color name="light_grey">#DADADA</color>
+    <color name="dark_grey">#878d95</color>
 </resources>
