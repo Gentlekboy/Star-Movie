@@ -18,4 +18,8 @@
     <color name="indigo">#47CFFF</color>
     <color name="light_grey">#DADADA</color>
     <color name="dark_grey">#878d95</color>
+    <color name="alpha_green">#4D4CD964</color>
+    <color name="alpha_red">#4DFF4762</color>
+    <color name="alpha_yellow">#4DD9D34C</color>
+    <color name="alpha_blue">#4D47CFFF</color>
 </resources>
