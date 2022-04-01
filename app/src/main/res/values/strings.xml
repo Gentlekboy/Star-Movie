@@ -97,4 +97,8 @@
     <string name="barcode">Barcode</string>
     <string name="p_a_r">P A R</string>
     <string name="_3_1_1_7_7_0_1_3_2_0_6_3_7_5">3 1 1 7 7 0 1 3 2 0 6 3 7 5</string>
+    <string name="notifications">Notifications</string>
+    <string name="congrat_you_booked_john_wick_3_movie_ticket_successfully">Congrat! You booked John Wick 3 movie ticket successfully.</string>
+    <string name="_10_48_25_am">10:48:25 AM</string>
+    <string name="notification_type_icon">Notification type icon</string>
 </resources>
