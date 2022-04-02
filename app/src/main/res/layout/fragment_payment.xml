@@ -59,7 +59,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingBottom="24dp">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/info_container"
@@ -210,6 +211,7 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/card_expiry_date_text_input_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
                 app:endIconMode="clear_text"
@@ -236,6 +238,7 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/cvv_text_input_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="110dp"
                 android:layout_height="wrap_content"
                 app:endIconMode="clear_text"

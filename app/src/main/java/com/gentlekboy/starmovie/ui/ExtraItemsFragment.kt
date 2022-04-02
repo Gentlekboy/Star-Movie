@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.gentlekboy.starmovie.R
 import com.gentlekboy.starmovie.adapter.ExtraItemAdapter
 import com.gentlekboy.starmovie.data.model.extraItemList
 import com.gentlekboy.starmovie.databinding.FragmentExtraItemsBinding
@@ -26,6 +28,15 @@ class ExtraItemsFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         setUpAdapter()
+        clickEvents()
+    }
+
+    private fun clickEvents() {
+        binding.apply {
+            continueButton.setOnClickListener {
+                findNavController().navigate(R.id.action_extraItemsFragment_to_paymentFragment)
+            }
+        }
     }
 
     private fun setUpAdapter() {

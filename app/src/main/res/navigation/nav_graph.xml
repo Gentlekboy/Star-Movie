@@ -91,6 +91,9 @@
         <action
             android:id="@+id/action_movieDetailFragment_to_blogFragment"
             app:destination="@id/blogFragment" />
+        <action
+            android:id="@+id/action_movieDetailFragment_to_extraItemsFragment"
+            app:destination="@id/extraItemsFragment" />
     </fragment>
     <fragment
         android:id="@+id/castAndCrewFragment"
@@ -101,7 +104,14 @@
         android:id="@+id/detailFragment"
         android:name="com.gentlekboy.starmovie.ui.DetailFragment"
         android:label="fragment_detail"
-        tools:layout="@layout/fragment_detail" />
+        tools:layout="@layout/fragment_detail" >
+        <action
+            android:id="@+id/action_detailFragment_to_reviewsFragment"
+            app:destination="@id/reviewsFragment" />
+        <action
+            android:id="@+id/action_detailFragment_to_showTimeFragment"
+            app:destination="@id/showTimeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/photosFragment"
         android:name="com.gentlekboy.starmovie.ui.PhotosFragment"
@@ -122,9 +132,6 @@
         android:name="com.gentlekboy.starmovie.ui.ExtraItemsFragment"
         android:label="fragment_extra_items"
         tools:layout="@layout/fragment_extra_items" >
-        <action
-            android:id="@+id/action_extraItemsFragment_to_showTimeFragment"
-            app:destination="@id/showTimeFragment" />
         <action
             android:id="@+id/action_extraItemsFragment_to_paymentFragment"
             app:destination="@id/paymentFragment" />
@@ -159,14 +166,29 @@
         android:id="@+id/reviewsFragment"
         android:name="com.gentlekboy.starmovie.ui.ReviewsFragment"
         android:label="fragment_reviews"
-        tools:layout="@layout/fragment_reviews" />
+        tools:layout="@layout/fragment_reviews" >
+        <action
+            android:id="@+id/action_reviewsFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_reviewsFragment_to_showTimeFragment"
+            app:destination="@id/showTimeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/showTimeFragment"
         android:name="com.gentlekboy.starmovie.ui.ShowTimeFragment"
         android:label="fragment_show_time"
         tools:layout="@layout/fragment_show_time" >
         <action
-            android:id="@+id/action_showTimeFragment_to_extraItemsFragment"
-            app:destination="@id/extraItemsFragment" />
+            android:id="@+id/action_showTimeFragment_to_reviewsFragment"
+            app:destination="@id/reviewsFragment" />
+        <action
+            android:id="@+id/action_showTimeFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.gentlekboy.starmovie.ui.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>
