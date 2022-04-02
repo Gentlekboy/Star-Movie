@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.gentlekboy.starmovie.R
 import com.gentlekboy.starmovie.adapter.DateAdapter
 import com.gentlekboy.starmovie.adapter.TimeAdapter
 import com.gentlekboy.starmovie.data.model.dateList
@@ -29,6 +31,15 @@ class ShowTimeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         setUpAdapters()
+        clickEvents()
+    }
+
+    private fun clickEvents() {
+        binding.apply {
+            chooseSeatButton.setOnClickListener {
+                parentFragment?.findNavController()?.navigate(R.id.action_movieDetailFragment_to_extraItemsFragment)
+            }
+        }
     }
 
     private fun setUpAdapters() {

@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.gentlekboy.starmovie.R
 import com.gentlekboy.starmovie.databinding.FragmentPaymentConfirmationBinding
 
 class PaymentConfirmationFragment : Fragment() {
@@ -21,6 +23,16 @@ class PaymentConfirmationFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        clickEvents()
+    }
+
+    private fun clickEvents() {
+        binding.apply {
+            viewTicketButton.setOnClickListener {
+                findNavController().navigate(R.id.action_paymentConfirmationFragment_to_ticketFragment)
+            }
+        }
     }
 
     override fun onDestroyView() {
