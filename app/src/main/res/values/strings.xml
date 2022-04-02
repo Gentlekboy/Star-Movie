@@ -101,4 +101,8 @@
     <string name="congrat_you_booked_john_wick_3_movie_ticket_successfully">Congrat! You booked John Wick 3 movie ticket successfully.</string>
     <string name="_10_48_25_am">10:48:25 AM</string>
     <string name="notification_type_icon">Notification type icon</string>
+    <string name="profile">Profile</string>
+    <string name="notification">Notification</string>
+    <string name="ticket">Ticket</string>
+    <string name="home">Home</string>
 </resources>
