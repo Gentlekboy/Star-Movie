@@ -105,4 +105,19 @@
     <string name="notification">Notification</string>
     <string name="ticket">Ticket</string>
     <string name="home">Home</string>
+    <string name="rish_tran">Rish Tran</string>
+    <string name="member">MEMBER</string>
+    <string name="thinhtran2406_gmail_com">thinhtran2406@gmail.com</string>
+    <string name="_123">123</string>
+    <string name="total_points">TOTAL POINTS</string>
+    <string name="_06">06</string>
+    <string name="movies_watched">MOVIES WATCHED</string>
+    <string name="profile_icon">Profile icon</string>
+    <string name="account_information">Account Information</string>
+    <string name="rate_app_icon">Rate app icon</string>
+    <string name="transactions_history">Transactions History</string>
+    <string name="privacy_policy_icon">Privacy policy icon</string>
+    <string name="rating_app">Rate App</string>
+    <string name="transaction_detail_icon">Transaction detail icon</string>
+    <string name="privacy_policy">Privacy Policy</string>
 </resources>
