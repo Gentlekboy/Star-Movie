@@ -22,4 +22,6 @@
     <color name="alpha_red">#4DFF4762</color>
     <color name="alpha_yellow">#4DD9D34C</color>
     <color name="alpha_blue">#4D47CFFF</color>
+    <color name="green">#19E58F</color>
+    <color name="profile_grey_background">#2B3543</color>
 </resources>
