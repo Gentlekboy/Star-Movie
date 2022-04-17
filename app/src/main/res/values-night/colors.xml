@@ -24,4 +24,7 @@
     <color name="alpha_blue">#4D47CFFF</color>
     <color name="green">#19E58F</color>
     <color name="profile_grey_background">#2B3543</color>
+    <color name="transaction_card_blue">#00428C</color>
+    <color name="transaction_card_inner_bar_blue">#0052A4</color>
+    <color name="transaction_card_inner_bar_blue_second">#004387</color>
 </resources>
