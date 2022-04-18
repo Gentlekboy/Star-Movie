@@ -29,11 +29,20 @@ class BlogFragment : Fragment(), RecyclerviewClickInterface {
         super.onViewCreated(view, savedInstanceState)
 
         setUpAdapter()
+        setUpClickEvents()
     }
 
     private fun setUpAdapter() {
         binding.blogRecyclerView.adapter = blogAdapter
         blogAdapter.addBlog(blogList)
+    }
+
+    private fun setUpClickEvents() {
+        binding.apply {
+            backArrow.setOnClickListener {
+                findNavController().navigateUp()
+            }
+        }
     }
 
     override fun onDestroyView() {
