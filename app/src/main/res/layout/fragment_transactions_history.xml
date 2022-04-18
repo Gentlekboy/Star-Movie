@@ -182,6 +182,7 @@
         app:layout_constraintTop_toBottomOf="@+id/expiry" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/transaction_history_rv"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
