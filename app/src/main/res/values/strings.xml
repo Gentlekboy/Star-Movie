@@ -125,4 +125,14 @@
     <string name="save_change">Save Change</string>
     <string name="old_password">OLD PASSWORD</string>
     <string name="new_password">NEW PASSWORD</string>
+    <string name="transaction_card_design">Transaction card design</string>
+    <string name="visa">Visa</string>
+    <string name="_4319_5312_0215_1289">4319 5312 0215 1289</string>
+    <string name="card_holder">Card holder</string>
+    <string name="expires">Expires</string>
+    <string name="_08_23">08/23</string>
+    <string name="booked_ticket">Booked Ticket</string>
+    <string name="minus_54_00">- $54.00</string>
+    <string name="_24_may_2019">24 MAY, 2019</string>
+    <string name="transaction_history_icon">Transaction history icon</string>
 </resources>
