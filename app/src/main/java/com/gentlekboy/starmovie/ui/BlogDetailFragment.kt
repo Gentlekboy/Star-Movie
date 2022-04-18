@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.gentlekboy.starmovie.databinding.FragmentBlogDetailBinding
 
 class BlogDetailFragment : Fragment() {
@@ -21,6 +22,16 @@ class BlogDetailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        setUpClickEvents()
+    }
+
+    private fun setUpClickEvents() {
+        binding.apply {
+            backArrow.setOnClickListener {
+                findNavController().navigateUp()
+            }
+        }
     }
 
     override fun onDestroyView() {
