@@ -29,6 +29,10 @@ class ChangePasswordFragment : Fragment() {
 
     private fun setUpClickEvents() {
         binding.apply {
+            backArrow.setOnClickListener {
+                findNavController().navigateUp()
+            }
+
             changePasswordButton.setOnClickListener {
                 findNavController().navigate(R.id.action_changePasswordFragment_to_accountInformationFragment)
             }
