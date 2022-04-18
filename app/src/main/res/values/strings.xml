@@ -121,8 +121,10 @@
     <string name="transaction_detail_icon">Transaction detail icon</string>
     <string name="privacy_policy">Privacy Policy</string>
     <string name="change_photo">Change Photo</string>
-    <string name="change_password">Change password</string>
+    <string name="change_password">Change Password</string>
     <string name="save_change">Save Change</string>
+    <string name="old_password">OLD PASSWORD</string>
+    <string name="new_password">NEW PASSWORD</string>
     <string name="transaction_card_design">Transaction card design</string>
     <string name="visa">Visa</string>
     <string name="_4319_5312_0215_1289">4319 5312 0215 1289</string>
