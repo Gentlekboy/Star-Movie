@@ -33,6 +33,10 @@ class ExtraItemsFragment : Fragment() {
 
     private fun clickEvents() {
         binding.apply {
+            backArrow.setOnClickListener {
+                findNavController().navigateUp()
+            }
+
             continueButton.setOnClickListener {
                 findNavController().navigate(R.id.action_extraItemsFragment_to_paymentFragment)
             }
