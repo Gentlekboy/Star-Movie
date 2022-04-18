@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.gentlekboy.starmovie.R
 import com.gentlekboy.starmovie.databinding.FragmentChangePasswordBinding
 
 class ChangePasswordFragment : Fragment() {
@@ -21,6 +23,20 @@ class ChangePasswordFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        setUpClickEvents()
+    }
+
+    private fun setUpClickEvents() {
+        binding.apply {
+            backArrow.setOnClickListener {
+                findNavController().navigateUp()
+            }
+
+            changePasswordButton.setOnClickListener {
+                findNavController().navigate(R.id.action_changePasswordFragment_to_accountInformationFragment)
+            }
+        }
     }
 
     override fun onDestroyView() {

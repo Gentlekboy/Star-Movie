@@ -29,6 +29,10 @@ class PaymentFragment : Fragment() {
 
     private fun clickEvents() {
         binding.apply {
+            backArrow.setOnClickListener {
+                findNavController().navigateUp()
+            }
+            
             orderButton.setOnClickListener {
                 findNavController().navigate(R.id.action_paymentFragment_to_paymentConfirmationFragment)
             }

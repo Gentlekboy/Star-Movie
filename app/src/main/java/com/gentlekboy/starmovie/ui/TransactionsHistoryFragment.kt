@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.gentlekboy.starmovie.R
 import com.gentlekboy.starmovie.adapter.TransactionsHistoryAdapter
 import com.gentlekboy.starmovie.data.model.transactionHistoryList
 import com.gentlekboy.starmovie.databinding.FragmentTransactionsHistoryBinding
@@ -26,6 +28,15 @@ class TransactionsHistoryFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         setUpAdapter()
+        setUpClickEvents()
+    }
+
+    private fun setUpClickEvents() {
+        binding.apply {
+            backArrow.setOnClickListener {
+                findNavController().navigate(R.id.action_transactionsHistoryFragment_to_profileFragment)
+            }
+        }
     }
 
     private fun setUpAdapter() {

@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.gentlekboy.starmovie.adapter.CastAndCrewAdapter
 import com.gentlekboy.starmovie.data.model.castAndCrewList
 import com.gentlekboy.starmovie.databinding.FragmentCastAndCrewBinding
@@ -26,6 +27,15 @@ class CastAndCrewFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         setUpAdapter()
+        setUpClickEvents()
+    }
+
+    private fun setUpClickEvents() {
+        binding.apply {
+            backArrow.setOnClickListener {
+                findNavController().navigateUp()
+            }
+        }
     }
 
     private fun setUpAdapter() {
