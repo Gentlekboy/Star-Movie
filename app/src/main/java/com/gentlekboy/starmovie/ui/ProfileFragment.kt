@@ -5,6 +5,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
+import com.gentlekboy.starmovie.R
 import com.gentlekboy.starmovie.databinding.FragmentProfileBinding
 
 class ProfileFragment : Fragment() {
@@ -21,6 +23,20 @@ class ProfileFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        setUpClickEvents()
+    }
+
+    private fun setUpClickEvents() {
+        binding.apply {
+            accountInformationContainer.setOnClickListener {
+                findNavController().navigate(R.id.action_profileFragment_to_accountInformationFragment)
+            }
+
+            transactionHistoryContainer.setOnClickListener {
+                findNavController().navigate(R.id.action_profileFragment_to_transactionsHistoryFragment)
+            }
+        }
     }
 
     override fun onDestroyView() {
