@@ -37,7 +37,7 @@
     </androidx.cardview.widget.CardView>
 
     <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/profile_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -48,7 +48,7 @@
         app:layout_constraintTop_toBottomOf="@+id/toolbar" />
 
     <TextView
-        android:id="@+id/textView23"
+        android:id="@+id/profile_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -58,14 +58,14 @@
         android:text="@string/rish_tran"
         android:textColor="@color/black"
         android:textSize="24sp"
-        app:layout_constraintEnd_toStartOf="@+id/textView24"
+        app:layout_constraintEnd_toStartOf="@+id/profile_tag"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
 
     <TextView
-        android:id="@+id/textView24"
+        android:id="@+id/profile_tag"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
@@ -77,14 +77,14 @@
         android:text="@string/member"
         android:textColor="@color/green"
         android:textSize="13sp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView23"
+        app:layout_constraintBottom_toBottomOf="@+id/profile_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView23"
-        app:layout_constraintTop_toTopOf="@+id/textView23" />
+        app:layout_constraintStart_toEndOf="@+id/profile_name"
+        app:layout_constraintTop_toTopOf="@+id/profile_name" />
 
     <TextView
-        android:id="@+id/textView25"
+        android:id="@+id/profile_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/sf_pro_text_regular"
@@ -93,10 +93,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_name" />
 
     <TextView
-        android:id="@+id/textView26"
+        android:id="@+id/total_points"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -110,33 +110,33 @@
         android:textSize="30sp"
         app:layout_constraintEnd_toStartOf="@+id/divider3"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView25" />
+        app:layout_constraintTop_toBottomOf="@+id/profile_email" />
 
     <TextView
-        android:id="@+id/textView27"
+        android:id="@+id/total_points_tv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/sf_pro_text_regular"
         android:text="@string/total_points"
         android:textAlignment="center"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView26"
-        app:layout_constraintStart_toStartOf="@+id/textView26"
-        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+        app:layout_constraintEnd_toEndOf="@+id/total_points"
+        app:layout_constraintStart_toStartOf="@+id/total_points"
+        app:layout_constraintTop_toBottomOf="@+id/total_points" />
 
     <View
         android:id="@+id/divider3"
         android:layout_width="1dp"
         android:layout_height="0dp"
         android:background="?android:attr/listDivider"
-        app:layout_constraintBottom_toBottomOf="@+id/textView29"
+        app:layout_constraintBottom_toBottomOf="@+id/movies_watched_tv"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView28" />
+        app:layout_constraintTop_toTopOf="@+id/movies_watched" />
 
     <TextView
-        android:id="@+id/textView28"
+        android:id="@+id/movies_watched"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -149,201 +149,202 @@
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/divider3"
-        app:layout_constraintTop_toTopOf="@+id/textView26" />
+        app:layout_constraintTop_toTopOf="@+id/total_points" />
 
     <TextView
-        android:id="@+id/textView29"
+        android:id="@+id/movies_watched_tv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/sf_pro_text_regular"
         android:text="@string/movies_watched"
         android:textAlignment="center"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="@+id/textView28"
-        app:layout_constraintStart_toStartOf="@+id/textView28"
-        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+        app:layout_constraintEnd_toEndOf="@+id/movies_watched"
+        app:layout_constraintStart_toStartOf="@+id/movies_watched"
+        app:layout_constraintTop_toBottomOf="@+id/movies_watched" />
 
     <View
-        android:id="@+id/view"
+        android:id="@+id/account_information_container"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/dark_grey_curved_stroke_with_dark_background"
         android:foreground="?attr/selectableItemBackground"
-        app:layout_constraintEnd_toEndOf="@+id/textView29"
-        app:layout_constraintStart_toStartOf="@+id/textView27"
-        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+        app:layout_constraintEnd_toEndOf="@+id/movies_watched_tv"
+        app:layout_constraintStart_toStartOf="@+id/total_points_tv"
+        app:layout_constraintTop_toBottomOf="@+id/total_points_tv" />
 
     <ImageView
-        android:id="@+id/imageView6"
+        android:id="@+id/account_information_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:contentDescription="@string/profile_icon"
         android:src="@drawable/profile"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toTopOf="@+id/view" />
+        app:layout_constraintBottom_toBottomOf="@+id/account_information_container"
+        app:layout_constraintStart_toStartOf="@+id/account_information_container"
+        app:layout_constraintTop_toTopOf="@+id/account_information_container" />
 
     <ImageView
-        android:id="@+id/imageView10"
+        android:id="@+id/account_information_arrow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:contentDescription="@string/forward_icon"
         android:src="@drawable/ic_baseline_arrow_forward_ios_24"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintTop_toTopOf="@+id/view" />
+        app:layout_constraintBottom_toBottomOf="@+id/account_information_container"
+        app:layout_constraintEnd_toEndOf="@+id/account_information_container"
+        app:layout_constraintTop_toTopOf="@+id/account_information_container" />
 
     <TextView
-        android:id="@+id/textView30"
+        android:id="@+id/account_information_tv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/sf_pro_text_regular"
         android:text="@string/account_information"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toStartOf="@+id/imageView10"
-        app:layout_constraintStart_toEndOf="@+id/imageView6"
-        app:layout_constraintTop_toTopOf="@+id/view" />
+        app:layout_constraintBottom_toBottomOf="@+id/account_information_container"
+        app:layout_constraintEnd_toStartOf="@+id/account_information_arrow"
+        app:layout_constraintStart_toEndOf="@+id/account_information_icon"
+        app:layout_constraintTop_toTopOf="@+id/account_information_container" />
 
     <View
-        android:id="@+id/view2"
+        android:id="@+id/transaction_history_container"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/dark_grey_curved_stroke_background"
         android:foreground="?attr/selectableItemBackground"
-        app:layout_constraintEnd_toEndOf="@+id/textView29"
-        app:layout_constraintStart_toStartOf="@+id/textView27"
-        app:layout_constraintTop_toBottomOf="@+id/view" />
+        app:layout_constraintEnd_toEndOf="@+id/movies_watched_tv"
+        app:layout_constraintStart_toStartOf="@+id/total_points_tv"
+        app:layout_constraintTop_toBottomOf="@+id/account_information_container" />
+
 
     <ImageView
-        android:id="@+id/imageView7"
+        android:id="@+id/transactions_history_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:contentDescription="@string/rate_app_icon"
-        android:src="@drawable/rate_app"
-        app:layout_constraintBottom_toBottomOf="@+id/view3"
-        app:layout_constraintStart_toStartOf="@+id/view3"
-        app:layout_constraintTop_toTopOf="@+id/view3" />
+        android:contentDescription="@string/transaction_detail_icon"
+        android:src="@drawable/transaction_detail"
+        app:layout_constraintBottom_toBottomOf="@+id/transaction_history_container"
+        app:layout_constraintStart_toStartOf="@+id/transaction_history_container"
+        app:layout_constraintTop_toTopOf="@+id/transaction_history_container" />
 
     <ImageView
-        android:id="@+id/imageView13"
+        android:id="@+id/transaction_history_arrow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:contentDescription="@string/forward_icon"
         android:src="@drawable/ic_baseline_arrow_forward_ios_24"
-        app:layout_constraintBottom_toBottomOf="@+id/view2"
-        app:layout_constraintEnd_toEndOf="@+id/view2"
-        app:layout_constraintTop_toTopOf="@+id/view2" />
+        app:layout_constraintBottom_toBottomOf="@+id/transaction_history_container"
+        app:layout_constraintEnd_toEndOf="@+id/transaction_history_container"
+        app:layout_constraintTop_toTopOf="@+id/transaction_history_container" />
 
     <TextView
-        android:id="@+id/textView31"
+        android:id="@+id/transaction_history_tv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/sf_pro_text_regular"
         android:text="@string/transactions_history"
-        app:layout_constraintBottom_toBottomOf="@+id/view2"
-        app:layout_constraintEnd_toStartOf="@+id/imageView13"
-        app:layout_constraintStart_toEndOf="@+id/imageView9"
-        app:layout_constraintTop_toTopOf="@+id/view2" />
+        app:layout_constraintBottom_toBottomOf="@+id/transaction_history_container"
+        app:layout_constraintEnd_toStartOf="@+id/transaction_history_arrow"
+        app:layout_constraintStart_toEndOf="@+id/transactions_history_icon"
+        app:layout_constraintTop_toTopOf="@+id/transaction_history_container" />
 
     <View
-        android:id="@+id/view3"
+        android:id="@+id/rate_app_container"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/dark_grey_curved_stroke_background"
         android:foreground="?attr/selectableItemBackground"
-        app:layout_constraintEnd_toEndOf="@+id/textView29"
-        app:layout_constraintStart_toStartOf="@+id/textView27"
-        app:layout_constraintTop_toBottomOf="@+id/view2" />
+        app:layout_constraintEnd_toEndOf="@+id/movies_watched_tv"
+        app:layout_constraintStart_toStartOf="@+id/total_points_tv"
+        app:layout_constraintTop_toBottomOf="@+id/transaction_history_container" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/rate_app_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:contentDescription="@string/privacy_policy_icon"
-        android:src="@drawable/privacy_policy"
-        app:layout_constraintBottom_toBottomOf="@+id/view4"
-        app:layout_constraintStart_toStartOf="@+id/view4"
-        app:layout_constraintTop_toTopOf="@+id/view4" />
+        android:contentDescription="@string/rate_app_icon"
+        android:src="@drawable/rate_app"
+        app:layout_constraintBottom_toBottomOf="@+id/rate_app_container"
+        app:layout_constraintStart_toStartOf="@+id/rate_app_container"
+        app:layout_constraintTop_toTopOf="@+id/rate_app_container" />
 
     <ImageView
-        android:id="@+id/imageView11"
+        android:id="@+id/rate_app_arrow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:contentDescription="@string/forward_icon"
         android:src="@drawable/ic_baseline_arrow_forward_ios_24"
-        app:layout_constraintBottom_toBottomOf="@+id/view3"
-        app:layout_constraintEnd_toEndOf="@+id/view3"
-        app:layout_constraintTop_toTopOf="@+id/view3" />
+        app:layout_constraintBottom_toBottomOf="@+id/rate_app_container"
+        app:layout_constraintEnd_toEndOf="@+id/rate_app_container"
+        app:layout_constraintTop_toTopOf="@+id/rate_app_container" />
 
     <TextView
-        android:id="@+id/textView32"
+        android:id="@+id/rate_app_tv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/sf_pro_text_regular"
         android:text="@string/rating_app"
-        app:layout_constraintBottom_toBottomOf="@+id/view3"
-        app:layout_constraintEnd_toStartOf="@+id/imageView11"
-        app:layout_constraintStart_toEndOf="@+id/imageView7"
-        app:layout_constraintTop_toTopOf="@+id/view3" />
+        app:layout_constraintBottom_toBottomOf="@+id/rate_app_container"
+        app:layout_constraintEnd_toStartOf="@+id/rate_app_arrow"
+        app:layout_constraintStart_toEndOf="@+id/rate_app_icon"
+        app:layout_constraintTop_toTopOf="@+id/rate_app_container" />
 
     <View
-        android:id="@+id/view4"
+        android:id="@+id/privacy_policy_container"
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginTop="16dp"
         android:background="@drawable/dark_grey_curved_stroke_background"
         android:foreground="?attr/selectableItemBackground"
-        app:layout_constraintEnd_toEndOf="@+id/textView29"
-        app:layout_constraintStart_toStartOf="@+id/textView27"
-        app:layout_constraintTop_toBottomOf="@+id/view3" />
+        app:layout_constraintEnd_toEndOf="@+id/movies_watched_tv"
+        app:layout_constraintStart_toStartOf="@+id/total_points_tv"
+        app:layout_constraintTop_toBottomOf="@+id/rate_app_container" />
 
     <ImageView
-        android:id="@+id/imageView9"
+        android:id="@+id/privacy_policy_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:contentDescription="@string/transaction_detail_icon"
-        android:src="@drawable/transaction_detail"
-        app:layout_constraintBottom_toBottomOf="@+id/view2"
-        app:layout_constraintStart_toStartOf="@+id/view2"
-        app:layout_constraintTop_toTopOf="@+id/view2" />
+        android:contentDescription="@string/privacy_policy_icon"
+        android:src="@drawable/privacy_policy"
+        app:layout_constraintBottom_toBottomOf="@+id/privacy_policy_container"
+        app:layout_constraintStart_toStartOf="@+id/privacy_policy_container"
+        app:layout_constraintTop_toTopOf="@+id/privacy_policy_container" />
 
     <ImageView
-        android:id="@+id/imageView12"
+        android:id="@+id/privacy_policy_arrow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:contentDescription="@string/forward_icon"
         android:src="@drawable/ic_baseline_arrow_forward_ios_24"
-        app:layout_constraintBottom_toBottomOf="@+id/view4"
-        app:layout_constraintEnd_toEndOf="@+id/view4"
-        app:layout_constraintTop_toTopOf="@+id/view4" />
+        app:layout_constraintBottom_toBottomOf="@+id/privacy_policy_container"
+        app:layout_constraintEnd_toEndOf="@+id/privacy_policy_container"
+        app:layout_constraintTop_toTopOf="@+id/privacy_policy_container" />
 
     <TextView
-        android:id="@+id/textView33"
+        android:id="@+id/privacy_policy_tv"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/sf_pro_text_regular"
         android:text="@string/privacy_policy"
-        app:layout_constraintBottom_toBottomOf="@+id/view4"
-        app:layout_constraintEnd_toStartOf="@+id/imageView12"
-        app:layout_constraintStart_toEndOf="@+id/imageView8"
-        app:layout_constraintTop_toTopOf="@+id/view4" />
+        app:layout_constraintBottom_toBottomOf="@+id/privacy_policy_container"
+        app:layout_constraintEnd_toStartOf="@+id/privacy_policy_arrow"
+        app:layout_constraintStart_toEndOf="@+id/privacy_policy_icon"
+        app:layout_constraintTop_toTopOf="@+id/privacy_policy_container" />
 </androidx.constraintlayout.widget.ConstraintLayout>
