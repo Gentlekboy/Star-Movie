@@ -190,5 +190,42 @@
         android:id="@+id/profileFragment"
         android:name="com.gentlekboy.starmovie.ui.ProfileFragment"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_profileFragment_to_accountInformationFragment"
+            app:destination="@id/accountInformationFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_transactionsHistoryFragment"
+            app:destination="@id/transactionsHistoryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/accountInformationFragment"
+        android:name="com.gentlekboy.starmovie.ui.AccountInformationFragment"
+        android:label="fragment_account_information"
+        tools:layout="@layout/fragment_account_information" >
+        <action
+            android:id="@+id/action_accountInformationFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_accountInformationFragment_to_changePasswordFragment"
+            app:destination="@id/changePasswordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.gentlekboy.starmovie.ui.ChangePasswordFragment"
+        android:label="fragment_change_password"
+        tools:layout="@layout/fragment_change_password" >
+        <action
+            android:id="@+id/action_changePasswordFragment_to_accountInformationFragment"
+            app:destination="@id/accountInformationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/transactionsHistoryFragment"
+        android:name="com.gentlekboy.starmovie.ui.TransactionsHistoryFragment"
+        android:label="fragment_transactions_history"
+        tools:layout="@layout/fragment_transactions_history" >
+        <action
+            android:id="@+id/action_transactionsHistoryFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
 </navigation>
