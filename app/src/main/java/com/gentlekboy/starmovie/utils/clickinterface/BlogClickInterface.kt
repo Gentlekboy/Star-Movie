@@ -1,5 +1,5 @@
 package com.gentlekboy.starmovie.utils.clickinterface
 
-interface RecyclerviewClickInterface {
+interface BlogClickInterface {
     fun navigateToItemDetails(movieTitle: String)
 }

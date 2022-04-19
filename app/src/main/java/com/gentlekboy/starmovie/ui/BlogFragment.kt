@@ -10,9 +10,9 @@ import com.gentlekboy.starmovie.R
 import com.gentlekboy.starmovie.adapter.BlogAdapter
 import com.gentlekboy.starmovie.data.model.blogList
 import com.gentlekboy.starmovie.databinding.FragmentBlogBinding
-import com.gentlekboy.starmovie.utils.clickinterface.RecyclerviewClickInterface
+import com.gentlekboy.starmovie.utils.clickinterface.BlogClickInterface
 
-class BlogFragment : Fragment(), RecyclerviewClickInterface {
+class BlogFragment : Fragment(), BlogClickInterface {
     private var _binding: FragmentBlogBinding? = null
     private val binding get() = _binding!!
     private val blogAdapter by lazy { BlogAdapter(this) }

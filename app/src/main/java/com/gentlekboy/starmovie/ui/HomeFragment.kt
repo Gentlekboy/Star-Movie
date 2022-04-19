@@ -11,10 +11,10 @@ import com.gentlekboy.starmovie.adapter.HomeScreenAdapter
 import com.gentlekboy.starmovie.data.model.comingSoonMovieList
 import com.gentlekboy.starmovie.data.model.nowShowingMovieList
 import com.gentlekboy.starmovie.databinding.FragmentHomeBinding
-import com.gentlekboy.starmovie.utils.clickinterface.RecyclerviewClickInterface
+import com.gentlekboy.starmovie.utils.clickinterface.BlogClickInterface
 import com.google.android.material.snackbar.Snackbar
 
-class HomeFragment : Fragment(), RecyclerviewClickInterface {
+class HomeFragment : Fragment(), BlogClickInterface {
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
     private val homeScreenAdapter by lazy { HomeScreenAdapter(this) }

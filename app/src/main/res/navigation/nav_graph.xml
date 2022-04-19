@@ -131,7 +131,11 @@
         android:id="@+id/ticketFragment"
         android:name="com.gentlekboy.starmovie.ui.TicketFragment"
         android:label="fragment_ticket"
-        tools:layout="@layout/fragment_ticket" />
+        tools:layout="@layout/fragment_ticket" >
+        <action
+            android:id="@+id/action_ticketFragment_to_ticketDetailsFragment"
+            app:destination="@id/ticketDetailsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/extraItemsFragment"
         android:name="com.gentlekboy.starmovie.ui.ExtraItemsFragment"
@@ -241,4 +245,9 @@
             android:id="@+id/action_transactionsHistoryFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/ticketDetailsFragment"
+        android:name="com.gentlekboy.starmovie.ui.TicketDetailsFragment"
+        android:label="fragment_ticket_details"
+        tools:layout="@layout/fragment_ticket_details" />
 </navigation>

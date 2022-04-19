@@ -6,14 +6,14 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.gentlekboy.starmovie.data.model.BlogModel
 import com.gentlekboy.starmovie.databinding.BlogViewHolderBinding
-import com.gentlekboy.starmovie.utils.clickinterface.RecyclerviewClickInterface
+import com.gentlekboy.starmovie.utils.clickinterface.BlogClickInterface
 import com.gentlekboy.starmovie.utils.diffutil.BlogDiffUtil
 
 /**
  * Recycler view adapter for the Blog Screen. Makes use of [BlogDiffUtil] for updating data.
  */
 class BlogAdapter(
-    private val recyclerviewClickInterface: RecyclerviewClickInterface
+    private val blogClickInterface: BlogClickInterface
 ) : RecyclerView.Adapter<BlogAdapter.BlogViewHolder>() {
 
     private var oldBlogList = ArrayList<BlogModel>()
@@ -34,7 +34,7 @@ class BlogAdapter(
             binding.durationTv.text = timeStamp
             binding.blogTitleTv.text = title
             binding.blogImage.setImageResource(image)
-            itemView.setOnClickListener { recyclerviewClickInterface.navigateToItemDetails(title) }
+            itemView.setOnClickListener { blogClickInterface.navigateToItemDetails(title) }
         }
     }
 
