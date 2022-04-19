@@ -13,9 +13,9 @@ import com.gentlekboy.starmovie.adapter.DetailPhotosAdapter
 import com.gentlekboy.starmovie.adapter.DetailVideosAdapter
 import com.gentlekboy.starmovie.data.model.*
 import com.gentlekboy.starmovie.databinding.FragmentDetailBinding
-import com.gentlekboy.starmovie.utils.clickinterface.RecyclerviewClickInterface
+import com.gentlekboy.starmovie.utils.clickinterface.BlogClickInterface
 
-class DetailFragment : Fragment(), RecyclerviewClickInterface {
+class DetailFragment : Fragment(), BlogClickInterface {
     private var _binding: FragmentDetailBinding? = null
     private val binding get() = _binding!!
     private val detailPhotosAdapter by lazy { DetailPhotosAdapter() }
